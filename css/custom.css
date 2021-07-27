@@ -1,0 +1,59 @@
+.navbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+  }
+
+  .titlebar {
+    background-color: #111;
+    height: 91px;
+    color: #818181;
+  }
+
+  .navbar a,
+  .titlebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+  }
+
+  .navbar a:hover,
+  .titlebar a:hover {
+    color: #f1f1f1;
+  }
+
+  .navbar .toggle-nav {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    margin-left: 50px;
+  }
+
+  .titlebar .toggle-nav {
+    margin-right: 20px;
+  }
+
+  .inline {
+    display: inline-block !important;
+  }
+
+  .titlebar h3 {
+    margin-top: 20px;
+  }
+
+  hr {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .subtabs {
+    margin-left: 10px;
+    font-size: small;
+  }
