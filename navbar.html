@@ -1,0 +1,51 @@
+<div id="nav" class="navbar">
+    <hr style="margin-top: 3rem;">
+    <a href="./index.html">About</a>
+    <hr>
+    <a href="javascript:void(0)" onclick="toggleProjects()">Projects</a>
+    <div id="projects" class="subtabs" style="display: none;">
+        <a href="./brickbreaker.html"> - BrickBreaker</a>
+    </div>
+    <hr>
+    <a href="#">Experience</a>
+    <hr>
+    <a href="#">Coursework</a>
+    <hr>
+    <a href="#">Interests</a>
+    <hr>
+</div>
+
+<div id="titlebar" class="titlebar">
+    <a href="javascript:void(0)" class="toggle-nav inline"
+        onclick="toggleNavigation()"><i class="fas fa-bars"></i></a>
+    <h3 class="inline">Khalil Virji</h3>
+</div>
+
+<script>
+    const nav = $("#nav");
+    const titlebar = $("#titlebar");
+    const projects = $("#projects");
+    const content = $("#content");
+
+    function toggleNavigation() {
+        const isopen = (nav.width() == 250);
+        if (isopen) {
+            nav.width(0);
+            titlebar.css("marginLeft", "0px");
+            content.css("marginLeft", "0px");
+        } else {
+            nav.width(250);
+            titlebar.css("marginLeft", "250px");
+            content.css("marginLeft", "250px");
+        }
+    }
+
+    function toggleProjects() {
+        if (projects.css("display") == "none") {
+            projects.css("display", "block");
+        } else {
+            projects.css("display", "none");
+        }
+    }
+
+</script>

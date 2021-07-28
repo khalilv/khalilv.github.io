@@ -18,57 +18,19 @@
 </head>
 
 <body>
-    <div id="nav" class="navbar">
-        <hr style="margin-top: 3rem;">
-        <a href="./index.html">About</a>
-        <hr>
-        <a href="javascript:void(0)" onclick="toggleProjects()">Projects</a>
-        <div id='projects' class="subtabs" style="display: none;">
-            <a href="javascript:void(0)"> - BrickBreaker</a>
-        </div>
-        <hr>
-        <a href="#">Experience</a>
-        <hr>
-        <a href="#">Coursework</a>
-        <hr>
-        <a href="#">Interests</a>
-        <hr>
-    </div>
 
-    <div id="main">
-        <div class="titlebar">
-            <a href="javascript:void(0)" style="transition: 0.5s;" class="toggle-nav inline"
-                onclick="toggleNavigation()"><i class="fas fa-bars"></i></a>
-            <h3 class="inline" style="transition: 0.5s;"> Khalil Virji</h3>
-        </div>
-        <div id="content"></div>
+    <div id="content">
+        
     </div>
-
 
     <script>
-        const nav = $('#nav');
-        const main = $('#main');
-        const projects = $('#projects')
-
-        function toggleNavigation() {
-            const isopen = (nav.width() == 250);
-            if (isopen) {
-                nav.width(0);
-                main.css('marginLeft', '0px');
-            } else {
-                nav.width(250);
-                main.css('marginLeft', '250px');
-            }
-        }
-
-        function toggleProjects() {
-            if (projects.css('display') == 'none') {
-                projects.css('display', 'block');
-            } else {
-                projects.css('display', 'none');
-            }
-        }
-
+        $(document).ready(function () {
+            $.ajax({
+                url: "./navbar.html",
+                success: function (data) { $(document.body).prepend(data); },
+                dataType: 'html'
+            });
+        });
     </script>
 </body>
 
