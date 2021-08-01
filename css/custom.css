@@ -1,13 +1,13 @@
 .navbar {
     height: 100%;
-    width: 0;
-    position: fixed;
+    width: 0px;
+    position: absolute;
     z-index: 1;
-    top: 0;
-    left: 0;
+    top: 91px;
+    left: 0px;
+    bottom: 0px;
     background-color: #ffe8d4;
     overflow-x: hidden;
-    padding-top: 60px;
   }
 
   .titlebar {
@@ -51,10 +51,36 @@
   hr {
     margin-bottom: 1rem;
     margin-top: 1rem;
-   border-top: 1px solid #818181 ;
+    border-top: 1px solid #818181 ;
   }
 
   .subtabs {
     margin-left: 10px;
     font-size: small;
   }
+
+  .content {
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%;
+    padding-top: 20px;
+  }
+
+  .list-item-content {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+
+  .bold {
+    font-weight: bold;
+  }
+
+  li {
+    margin-bottom: 25px;
+  }
+
+  body {
+    position: relative;
+  }
+

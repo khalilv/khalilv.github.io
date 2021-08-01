@@ -15,12 +15,71 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/favicon.png">
+    <style>
+        canvas {
+            background: #eee;
+            display: block;
+            width: 80%;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div id="content">
-        
+    <div id="content" class="content">
+        <h4 class="content-title">Brick Breaker</h4>
+        <ul>
+            <li>
+                <span class="list-item-title">Demo</span>
+                <div class="list-item-content">
+                    <img id="brickImage" style="display: none;" src="./images/brick.jpg">
+                    <canvas id="brickBreakerCanvas" width="800" height="500"></canvas>
+                    <script src="./js/blockbreaker.js">  </script>
+                </div>
+            </li>
+            <li>
+                <span class="list-item-title">Source</span>
+                <ul>
+                    <li>
+                        <a href="https://github.com/khalilv/brickBreaker"
+                            target="_blank">github.com/khalilv/brickBreaker</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="list-item-title">Details</span>
+                <div class="list-item-content">
+                    <p>I made this game in the summer of 2019. It was my first introduction to javascript, HTML and CSS.
+                        I started by watching a youtube
+                        video on <a href="https://www.youtube.com/watch?v=3EMxBkqC4z0" target="_blank">Intro to Game Development with
+                            JavaScript</a>
+                        and by following instructions in an MDN document <a
+                            href="https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_Breakout_game_pure_JavaScript" target="_blank">2D
+                            breakout game using pure JavaScript.</a>
+                        After some hours of work, to my surprise I had a working brick breaker game that I could play on
+                        my browser. That was my first taste into the world of
+                        front-end development and it was shocking to me that I could build something like that given the
+                        limited knowledge and experience I had.
+                    </p>
+                    <p>
+                        However, at that point, I wasn't fully satisfied with my work. Given I mostly just followed
+                        instructions in the video and in the document I felt I needed to do a little more before
+                        concluding the project. Over the next few days I took some time to add extra features to personalize and improve my version of the game. 
+                        Some features I added were: increased ball speed and smaller paddle width as the game progresses, 
+                        pausing the game on new levels and on a new life, 5 level variations, and a more releastic rebounding of the ball off bricks. 
+                        I also added custom styling to make the game look my own. 
+                    </p>
+                    <p>
+                        This game was a great learning experience for me to understand how javascript, HTML and CSS work together 
+                        and I am glad I took the time to build this game. I use javascript, HTML and CSS almost everyday now - at work and for personal projects - 
+                        and its always funny to look back and see where it all started. Hope you enjoy the game :) 
+                    </p>
+                </div>
+            </li>
+        </ul>
+
+
+
     </div>
 
     <script>

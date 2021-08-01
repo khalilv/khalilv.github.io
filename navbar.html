@@ -1,5 +1,5 @@
 <div id="nav" class="navbar">
-    <hr style="margin-top: 3rem;">
+    <hr style="margin-top: 0rem;">
     <a href="./index.html">About</a>
     <hr>
     <a href="javascript:void(0)" onclick="toggleProjects()">Projects</a>
@@ -23,20 +23,14 @@
 
 <script>
     const nav = $("#nav");
-    const titlebar = $("#titlebar");
     const projects = $("#projects");
-    const content = $("#content");
 
     function toggleNavigation() {
         const isopen = (nav.width() == 250);
         if (isopen) {
             nav.width(0);
-            titlebar.css("marginLeft", "0px");
-            content.css("marginLeft", "0px");
         } else {
             nav.width(250);
-            titlebar.css("marginLeft", "250px");
-            content.css("marginLeft", "250px");
         }
     }
 
