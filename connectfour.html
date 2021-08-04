@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | Connect Four</title>
+    <meta name="description" content="A one player connect four game I made in Java">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <div class="content">
+        <h4 class="content-title">Connect Four</h4>
+        <ul>
+            <li>
+                <span class="list-item-title">Demo</span>
+                <div class="list-item-content">
+                    <video autoplay muted loop width="100%">
+                        <source src="./videos/Connect_Four_Demo.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </li>
+            <li>
+                <span class="list-item-title">Source</span>
+                <ul>
+                    <li>
+                        <a href="https://github.com/khalilv/Connect_four-"
+                            target="_blank">github.com/khalilv/Connect_four-</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="list-item-title">Details</span>
+                <div class="list-item-content">
+                    <p>This game was an academic project I did during my second semester at McGill. It is a simple
+                        connect four game that you can play on the command line against the computer. It was made using
+                        Object Oriented Programming in Java. What is cool about this game is that the computer checks
+                        two moves ahead to see if it has a winning sequence, otherwise its move is dependent on the
+                        users. This makes the game surprisingly difficult to beat on the first few attempts and it was a
+                        weird feeling when I found myself struggling to beat a game that I created. This was the second
+                        game I coded in Java (the first was Tic-Tac-Toe), and it required a bit more complex logic to
+                        add this layer of difficulty. It was definitely enjoyable to make and even more so to play.
+                    </p>
+                    <img src="./images/connect-four.PNG" width="35%">
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "./navbar.html",
+                success: function (data) { $(document.body).prepend(data); },
+                dataType: 'html'
+            });
+        });
+    </script>
+</body>
+
+</html>
