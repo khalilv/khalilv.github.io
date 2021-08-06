@@ -1,0 +1,102 @@
+<!-- TEMPLATE FOR CREATING NEW PAGES. DONT FORGET TO ADD LINK IN NAVBAR -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | Tiny Shell</title>
+    <meta name="description" content="A mock shell implemented in C">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+
+    <div class="content">
+        <h4 class="content-title">Tiny Shell</h4>
+        <ul>
+            <li>
+                <span class="list-item-title">Demo</span>
+                <div class="list-item-content">
+                    <video autoplay muted loop width="100%">
+                        <source src="./videos/TINY_SHELL_DEMO.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+            </li>
+            <li>
+                <span class="list-item-title">Source</span>
+                <ul>
+                    <li>
+                        <a href="https://github.com/khalilv/tinyShell" target="_blank">github.com/khalilv/tinyShell</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="list-item-title">Details</span>
+                <div class="list-item-content">
+                    <p>This was an academic project for an operating systems course I took during my third year at
+                        McGill. It is a mock shell implemented in C. You can input commands directly into this program
+                        and the shell
+                        will execute them. You can pass a file into the program and the shell will run all the commands
+                        in the file then
+                        terminate. You can also add a FIFO as an input and the shell will run <i>FIFO mode</i>. This
+                        will use the
+                        named pipe to execute commands.
+                    </p>
+                    <p>
+                        For internal commands, the shell can accept four.
+                    </p>
+                    <ul>
+                        <li><code>history</code>: shows up to the last
+                            100 commands executed</li>
+                        <li><code>chdir</code>: changes the working directory. Works with absolute and relative paths.
+                        </li>
+                        <li><code>limit <i>int</i></code>: sets the soft limit of <code>RLIM_DATA</code>.</li>
+                        <li><code>checklim</code>: displays the current hard and soft limits of <code>RLIM_DATA</code>.
+                        </li>
+                    </ul>
+                    <p>
+                        For signal handling, the shell can handle two cases.
+                    </p>
+                    <ul>
+                        <li><code>CTRL^C</code>: the shell will display a message asking the
+                            user if they would like to terminate the program. If yes, the shell will terminate. If no, the
+                            shell
+                            will continue.</li>
+                        <li><code>CTRL^Z</code>: the shell will ignore this command and keep running.
+                        </li>
+                    </ul>
+                    <p>
+                        This project was a great experience for me to explore concepts of low-level programming such as
+                        memory allocation, processes and inter-process communication, threads, and signal handling. It was
+                        definitely one of my more difficult academic assignments but a cool result nonetheless.
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <k>
+
+
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: "./navbar.html",
+                success: function (data) { $(document.body).prepend(data); },
+                dataType: 'html'
+            });
+        });
+    </script>
+</body>
+
+</html>
