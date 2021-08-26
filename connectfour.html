@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Khalil Virji | Connect Four</title>
-    <meta name="description" content="A one player connect four game I made in Java">
+    <meta name="description" content="A one-player Connect Four game I made using Java Object Oriented Programming">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -18,8 +18,14 @@
 </head>
 
 <body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
 
     <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
         <h4 class="content-title">Connect Four</h4>
         <ul>
             <li>
@@ -47,8 +53,9 @@
                         connect four game that you can play on the command line against the computer. It was made using
                         Object Oriented Programming in Java. What is cool about this game is that the computer checks
                         two moves ahead to see if it has a winning sequence, otherwise its move is dependent on the
-                        users. This makes the game surprisingly difficult to beat on the first few attempts, and it was a
-                        weird feeling when I found myself struggling to beat a game that I created. 
+                        users. This makes the game surprisingly difficult to beat on the first few attempts, and it was
+                        a
+                        weird feeling when I found myself struggling to beat a game that I created.
                     </p>
                     <p>
                         This was the second
@@ -61,15 +68,6 @@
         </ul>
     </div>
 
-    <script>
-        $(document).ready(function () {
-            $.ajax({
-                url: "./navbar.html",
-                success: function (data) { $(document.body).prepend(data); },
-                dataType: 'html'
-            });
-        });
-    </script>
 </body>
 
 </html>

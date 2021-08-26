@@ -3,9 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | About</title>
-    <meta name="description"
-        content="A website highlighting my interests, projects, coursework and professional experience.">
+    <title>Khalil Virji</title>
+    <meta name="description" content="A personal website highlighting my projects and experience.">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -19,29 +18,20 @@
 </head>
 
 <body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
 
     <div class="content">
+
+
         <h4 class="content-title">About</h4>
-        <p>
-            I am a fifth year student studying mathematics and computer science at McGill University. I was
-            raised in Vancouver, BC and moved out to Montreal in 2017 for school. My plan starting
-            out at McGill was to pursue a degree in physics and mathematics. However, during my first semseter I took a
-            <a href="https://www.mcgill.ca/study/2020-2021/courses/comp-202" target="_blank">Foundations of
-                Programming</a> course and quickly
-            switched my focus.
-        </p>
-        <p>
-            Since starting at McGill, I have had the privelege to explore many areas of computer science through
-            my courses, proffesional experience, and projects. I built this website to
-            highlight some of my work, but also to share my love for
-            computer science and technology.
-        </p>
         <ul>
             <li>
                 <span class="list-item-title">Education</span>
                 <ul>
                     <li>
-                        B.Sc Major Mathematics and Computer Science, McGill University
+                        B.Sc Major Mathematics and Computer Science, McGill University | <i>Graduation 2022</i>
                     </li>
                 </ul>
             </li>
@@ -55,10 +45,24 @@
                         <a href="./assets/Khalil_Virji_Resume.pdf" target="_blank">Resume</a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/khalilvirji/" target="_blank">Linkedin</a>
+                        <a href="https://www.linkedin.com/in/khalilvirji/" target="_blank">LinkedIn</a>
                     </li>
                     <li>
                         <a href="mailto:khalil.virji1@gmail.com" target="_blank">Email</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="list-item-title">Projects</span>
+                <ul>
+                    <li>
+                        <a href="./brickbreaker.html">Brick Breaker</a> | <i>JavaScript, HTML, CSS</i>
+                    </li>
+                    <li>
+                        <a href="./connectfour.html">Connect Four</a> | <i>Java</i>
+                    </li>
+                    <li>
+                        <a href="./tinyshell.html">Tiny Shell</a> | <i>C</i>
                     </li>
                 </ul>
             </li>
@@ -66,15 +70,6 @@
 
     </div>
 
-    <script>
-        $(document).ready(function () {
-            $.ajax({
-                url: "./navbar.html",
-                success: function (data) { $(document.body).prepend(data); },
-                dataType: 'html'
-            });
-        });
-    </script>
 </body>
 
 </html>

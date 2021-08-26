@@ -1,63 +1,16 @@
-.navbar {
-    height: 100%;
-    min-height: 100vh;
-    width: 0px;
-    position: absolute;
-    z-index: 1;
-    top: 91px;
-    left: 0px;
-    background-color: #ffe8d4;
-    overflow-x: hidden;
-    overflow-y: visible;
-  }
-
   .titlebar {
     background-color: #ffe8d4;
     height: 91px;
     color: #818181;
   }
 
-  .navbar a,
-  .titlebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    color: #818181;
-    display: block;
-  }
-
-  .navbar a:hover,
-  .titlebar a:hover {
-    color: #111;
-  }
-
-  .navbar .toggle-nav {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    margin-left: 50px;
-  }
-
-  .titlebar .toggle-nav {
-    margin-right: 20px;
-  }
-
-  .inline {
+  .title {
     display: inline-block !important;
+    margin-left: 30px;
   }
 
   .titlebar h3 {
     margin-top: 20px;
-  }
-
-  hr {
-    margin-bottom: 1rem;
-    margin-top: 1rem;
-    border-top: 1px solid #818181 ;
-  }
-
-  .subtabs {
-    margin-left: 10px;
-    font-size: small;
   }
 
   .content {
@@ -72,11 +25,6 @@
     margin-top: 20px;
   }
 
-  body {
-    position: relative;
+  .back-btn {
+    padding-bottom: 10px;
   }
-
-  .relative {
-    position: relative;
-  }
-

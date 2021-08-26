@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Khalil Virji | Brick Breaker</title>
-    <meta name="description" content="A brick breaker game I made using JavaScript, HTML and CSS">
+    <meta name="description" content="A Brick Breaker game I made using JavaScript, HTML and CSS">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -25,8 +25,13 @@
 </head>
 
 <body>
-
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
     <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
         <h4 class="content-title">Brick Breaker</h4>
         <ul>
             <li>
@@ -90,22 +95,6 @@
             </li>
         </ul>
     </div>
-
-    <script>
-        $(document).ready(function () {
-            $.ajax({
-                url: "./navbar.html",
-                success: function (data) { $(document.body).prepend(data); },
-                dataType: 'html'
-            });
-        });
-
-        window.addEventListener('keydown', function (e) {
-            if (e.keyCode == 32 && e.target == document.body) {
-                e.preventDefault();
-            }
-        });
-    </script>
 </body>
 
 </html>

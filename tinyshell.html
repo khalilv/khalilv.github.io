@@ -19,8 +19,14 @@
 </head>
 
 <body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
 
     <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
         <h4 class="content-title">Tiny Shell</h4>
         <ul>
             <li>
@@ -69,7 +75,8 @@
                     </p>
                     <ul>
                         <li><code>CTRL^C</code>: the shell will display a message asking the
-                            user if they would like to terminate the program. If yes, the shell will terminate. If no, the
+                            user if they would like to terminate the program. If yes, the shell will terminate. If no,
+                            the
                             shell
                             will continue.</li>
                         <li><code>CTRL^Z</code>: the shell will ignore this command and keep running.
@@ -77,7 +84,8 @@
                     </ul>
                     <p>
                         This project was a great experience for me to explore concepts of low-level programming such as
-                        memory allocation, processes and inter-process communication, threads, and signal handling. It was
+                        memory allocation, processes and inter-process communication, threads, and signal handling. It
+                        was
                         definitely one of my more difficult academic assignments but a cool result nonetheless.
                     </p>
                 </div>
@@ -85,18 +93,6 @@
         </ul>
     </div>
 
-    <k>
-
-
-    <script>
-        $(document).ready(function () {
-            $.ajax({
-                url: "./navbar.html",
-                success: function (data) { $(document.body).prepend(data); },
-                dataType: 'html'
-            });
-        });
-    </script>
 </body>
 
 </html>
