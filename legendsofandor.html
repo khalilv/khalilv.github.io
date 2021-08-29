@@ -1,0 +1,117 @@
+<!-- TEMPLATE FOR CREATING NEW PAGES. DONT FORGET TO ADD LINK IN NAVBAR -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | Legends of Andor</title>
+    <meta name="description" content="A multiplayer turn-based board game for Android devices">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
+
+    <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <h4 class="content-title">Legends of Andor</h4>
+        <ul>
+            <li>
+                <span class="list-item-title">Demo</span>
+                <div class="list-item-content">
+                    <video autoplay muted loop width="100%">
+                        <source src="./videos/loa-game-demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+            <li>
+                <span class="list-item-title">Source</span>
+                <ul>
+                    <li>
+                        <a href=https://github.com/khalilv/LegendsOfAndor"
+                            target="_blank">github.com/khalilv/LegendsOfAndor</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <span class="list-item-title">Details</span>
+                <div class="list-item-content">
+                    <p>This was a group project I completed with five others during my third year at McGill. We were
+                        instructed to implement a digital version of the board game
+                        <a href="http://legendsofandor.com/" target="_blank">Legends of Andor</a> on a platform of our
+                        choosing. My group chose to implement it for Android devices, using Android Studio and IntelliJ
+                        for development.
+                    </p>
+                    <p>
+                        The acceptance criteria for the game was as follows.
+                    <ul>
+                        <li>
+                            All core features of the game must be present including free actions, player movement,
+                            monster fights, farmers, witches, princes, and runestones.
+                        </li>
+                        <li>
+                            The game must be playable from start to finish without any crashes, errors, or unexpected
+                            behaviour.
+                        </li>
+                        <li>
+                            There must be a login/logout functionality for players.
+                        </li>
+                        <li>
+                            The game must have the ability to save/load games.
+                        </li>
+                    </ul>
+                    </p>
+                    <p>
+                        We used a client-server architecture to develop this game with the server being implemented with
+                        SpringBoot, and the client with Android Studio. It was the biggest project I have done in my
+                        undergrad and it took us two semesters to complete. We used Object Oriented Programming in Java
+                        and leveraged several design patterns including the Singleton, Flyweight, and Observer
+                        patterns. We worked with threads, client and server validation, and <a
+                            href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring REST services</a>. We
+                        implemented additional features such as a chat room, a character details page, how-to-play
+                        pages, and a live
+                        waiting room where players can view the status of other players before the game begins. We also
+                        took the time to design a nice UI using XML to make the game more enjoyable to play.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <span class="list-item-title">Media</span>
+                <div class="list-item-content">
+                    <video autoplay muted loop width="100%">
+                        <source src="./videos/loa-falcon-trade.mp4" type="video/mp4">
+                    </video>
+                    <div class="row">
+                        <div class="columns six">
+                            <img src="./images/loa_fight.PNG" width="100%">
+                        </div>
+                        <div class="columns six">
+                            <img src="./images/loa_character.PNG" width="100%">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="columns six">
+                            <img src="./images/loa_merchant.PNG" width="100%">
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
