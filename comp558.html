@@ -1,0 +1,113 @@
+<!-- TEMPLATE FOR CREATING NEW PAGES. DONT FORGET TO ADD LINK IN NAVBAR -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | COMP 558</title>
+    <meta name="description" content="A computer vision course I took">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
+
+    <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <h4 class="content-title">COMP 558</h4>
+        <ul>
+            <li>
+                This was a Computer Vision course that I took during my fifth year at McGill. Some of the important topics we covered are listed below.
+                <ul>
+                    <li>
+                        Image Filtering - <i>local averaging, local difference, gaussian smoothing, convolution, cross correlation, image gradient
+                        </i>
+                    </li>
+                    <li>
+                        Edge Detection - <i>Prewitt and Sobel edge detectors, Marr & Hildreth edge detector, Canny edge detector, laplacian operator</i>
+                    </li>
+                    <li>
+                        Vanishing Point Detection - <i>Hough transform, RANSAC (random sample consensus) </i>
+                    </li>
+                    <li>
+                        Scale Space - <i>(normalized) gaussian (derivative, second derivative) scale space, gaussian pyramid, Lucas-Kanade image registration </i>
+                    </li>
+                    <li>
+                        Feature Detection - <i>locally distinctive points, second moment matrix, Harris corner detector, HOG (Histogram of Oriented Gradients) descriptors, SIFT keypoints, SURF keypoints, panoramas</i>
+                    </li>
+                    <li>
+                        Image Registration - <i>optical flow, KLT tracking, medical imaging</i>
+                    </li>
+                    <li>
+                        Perspective - <i>image projection, camera vs world coordinates, vanishing points</i>
+                    </li>
+                    <li>
+                        Rotations, Translations and Reflections - <i>2D/3D camera rotations, reflections, and translations, homogeneous coordinates, points at infinity </i>
+                    </li>
+                    <li>
+                        Camera Intrinsics and Extrinsics - <i>camera vs world coordinate systems, camera calibration matrix, finite projective camera model (P) </i>
+                    </li>
+                    <li>
+                        Camera Calibration - <i>finding camera intrinsic and extrinsic parameters from corresponding pairs of image and 3D scene points </i>
+                    </li>
+                    <li>
+                        Homographies - <i>fitting homographies between two images, applications</i>
+                    </li>
+                    <li>
+                        Stereo and Epipolar Geometry - <i>epipoles, epipolar lines, essential matrix, fundamental matrix, image rectification, 8 point algorithm, disparity estimation, RGBD cameras </i>
+                    </li>
+                    <li>
+                        3D reconstruction - <i>iterative closest points algorithm (ICP)</i>
+                    </li>
+                </ul>
+            </li>
+            <li>We also had four assignments throughout the course. 
+                <ol>
+                    <li>
+                        Edge detection using oriented operators - implemented our own edge detector using techniques seen in class. Results from my submission are shown below (left is original image).  
+                        <div class="list-item-content">
+                            <div class="row">
+                                <div class="columns six">
+                                    <img src="./images/comp558/skyscrapers.jpg" width="60%">
+                                </div>
+                                <div class="columns six">
+                                    <img src="./images/comp558/edgedetect1.jpg" width="75%">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        Line finding using RANSAC - implemented the RANSAC algorithm to detect prominent lines in an image. Results from my submission are shown below. 
+                        <div class="list-item-content">
+                            <div class="row">
+                                <div class="columns">
+                                    <img src="./images/comp558/ransac.jpg" width="40%">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        COMING SOON 
+                    </li>
+                </ol>
+            
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
