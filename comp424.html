@@ -1,0 +1,115 @@
+<!-- TEMPLATE FOR CREATING NEW PAGES. DONT FORGET TO ADD LINK IN NAVBAR -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | COMP 424</title>
+    <meta name="description" content="A course I took on artificial intelligence">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
+
+    <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <h4 class="content-title">COMP 424 - Artificial Intelligence</h4>
+        <ul>
+            <li>
+                This was an Artificial Intelligence course that I took during my fifth year at McGill. Some of the
+                important
+                topics we covered are listed below.
+                <ul>
+                    <li>
+                        <b>Uninformed Search</b> - <i>state space graph, search tree, BFS, DFS, uniform-cost search,
+                            depth-limited search, iterative deepening search
+                        </i>
+                    </li>
+                    <li>
+                        <b>Informed Search</b> - <i>heuristics, best-first search, heuristic search, admissible
+                            heuristics, consistent heuristics, A* search, dominance</i>
+                    </li>
+                    <li>
+                        <b>Local Search for Optimization</b> - <i>hill climbing, simulated annealing, parallel search,
+                            local beam search, genetic algorithms</i>
+                    </li>
+                    <li>
+                        <b>Constraint Satisfaction Problems</b> - <i>constructive vs local search approaches,
+                            backtracking search, constraint graph, arc consistency, AC-3, forward checking </i>
+                    </li>
+                    <li>
+                        <b>Searching Under Uncertainty</b> - <i>partial observability, unobservability,
+                            non-deterministic actions, conformant planning, AND-OR search, belief states</i>
+                    </li>
+                    <li>
+                        <b>Game Playing</b> - <i>minimax search, evaluation functions, alpha-beta pruning, forward
+                            pruning, monte-carlo tree search (MCTS), upper confidence trees, exploration vs exploitation
+                            tradeoff</i>
+                    </li>
+                    <li>
+                        <b>Knowledge Representation and Logic</b> - <i>propositional logic, propositional inference,
+                            model checking, normal forms (CNF, DNF, Horn), validity and satisfiability, forward
+                            chaining, backward chaining, first-order logic (FOL), quantifiers, FOL inference, FOL
+                            proofs, resolution, skolemization </i>
+                    </li>
+                    <li>
+                        <b>Planning </b> - <i>STRIPS planning, progression/forward planning, regression/backward
+                            planning, planning as logic</i>
+                    </li>
+                    <li>
+                        <b>Modelling Uncertainty</b> - <i>bayesian probability, probabilistic inference, naive bayes
+                            model, bayesian networks, inference in bayesian networks, variable elimination algorithm,
+                            bayes ball algorithm</i>
+                    </li>
+                    <li>
+                        <b>Learning in Bayesian Networks</b> - <i>maximum likelihood estimation (MLE), laplace
+                            smoothing, latent variables, learning with missing data, expectation maximization (EM), soft
+                            vs hard EM, k-means clustering </i>
+                    </li>
+                    <li>
+                        <b>Causal Graphical Models</b> - <i>causation vs correlation, do-operator, causal vs
+                            probabilistic conditioning, identifying causal effects, back-door paths</i>
+                    </li>
+                    <li>
+                        <b>Utility and Decision Theory</b> - <i>axioms, lotteries, maximum expected utility (MEU),
+                            decision graphs, value of information</i>
+                    </li>
+                    <li>
+                        <b>Bandits</b> - <i>bandit problems, greedy bandits, epsilon-greedy bandits, softmax action
+                            selection, optimistic initialization, upper-confidence bounds, contextual bandits </i>
+                    </li>
+                    <li>
+                        <b>Markov Decision Processes (MDP)</b> - <i>sequential decision-making, MDP framework, policy
+                            iteration, policy evaluation, bellman equation, value iteration, reinforcement learning</i>
+                    </li>
+                </ul>
+            </li>
+            <li>We had four written assignments throughout the course which were focussed on material seen in class. For
+                our final project we were required to build a game playing agent for the board game <b>Colosseum
+                    Survival</b>. The project was done in pairs and my partner and I implemented our agent using
+                Monte-Carlo Tree Search equipped with domain specific heuristics. The project code and detailed report
+                can be found <a href="https://github.com/khalilv/popcoin" target="_blank">here</a> and a demo of our agent beating a random agent is shown below. 
+                <video autoplay muted loop width="70%" style="padding-top: 20px;">
+                    <source src="./videos/popcoin.mp4" type="video/mp4">
+                </video>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
