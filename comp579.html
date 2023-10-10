@@ -1,0 +1,116 @@
+<!-- TEMPLATE FOR CREATING NEW PAGES. DONT FORGET TO ADD LINK IN NAVBAR -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | COMP 579</title>
+    <meta name="description" content="A course I took on reinforcement learning">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
+
+    <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <h4 class="content-title">COMP 579 - Reinforcement Learning</h4>
+        <ul>
+            <li>
+                This was a Reinforcement Learning course that I took with Professor Doina Precup during my Masters at
+                McGill. Some
+                of the important
+                topics we covered are listed below.
+                <ul>
+                    <li>
+                        <b>Bandits</b> - <i>Multi-arm bandits, exploration vs exploitation, action-value methods,
+                            epsilon-greedy action selection, UCB action selection,
+                            non-stationary bandits, regret, Hoeffding's inequality, gradient-bandit algorithms,
+                            Boltzmann/softmax exploration, Thompson sampling
+                        </i>
+                    </li>
+                    <li>
+                        <b>Markov Decision Processes</b> - <i>Markov property, policies, goals and rewards, action and
+                            state spaces, value functions, state-value functions, state transitions, discounted returns,
+                            episodic vs continuous tasks, Bellman equation </i>
+                    </li>
+                    <li>
+                        <b>Sequential decision making</b> - <i>Iterative policy evaluation and improvement, generalized
+                            policy iteration (GPI), value iteration, dynamic programming, Monte Carlo policy evaluation,
+                            temporal difference (TD) learning methods, on-policy vs off-policy, Q-learning, double
+                            Q-learning, DQN, expected Sarsa, semi-gradient methods </i>
+                    </li>
+                    <li>
+                        <b>Planning</b> - <i>Model-based vs model-free RL, planning from model -> policy, Dyna-Q
+                            algorithm, prioritized sweeping, trajectory sampling, heuristic search, PlaNet, Dreamer,
+                            MuZero</i>
+                    </li>
+                    <li>
+                        <b>Policy-Based RL</b> - <i>Value-based vs policy-based RL, policy-gradient methods, contextual
+                            bandits, policy gradient theorem, actor-critic methods, episodic vs continuous actions
+                            spaces, A2C and A3C, TRPO, PPO, DDPG
+                        </i>
+                    </li>
+                    <li>
+                        <b>Hierarchical RL
+                        </b> - <i>Options, option-critic architecture, bottleneck states, termination-critic,
+                            generalized value functions (GVFs) </i>
+                    </li>
+                    <li>
+                        <b>Learning from demonstrations</b> - <i>Reward shaping, imitation learning, behavioral cloning,
+                            DAGGER, inverse-RL, max entropy principle, stochastic MDPs</i>
+                    </li>
+                    <li>
+                        <b>Batch-Constrained RL</b> - <i>BCQ, extrapolation error</i>
+                    </li>
+                    <li>
+                        <b>Additional Topics</b> - <i>Reward-is-enough hypothesis, task types: SOAPs, POs, and TOs,
+                            never-ending/continual RL, non-markovian structures, POMDPs, multi-task RL </i>
+                    </li>
+                </ul>
+            </li>
+            <li>We also had three assignments and one project throughout the course.
+                <ol>
+                    <li>
+                        <b>Bandit Algorithms</b> - <i>Explored the UCB, Thompson sampling, and epsilon greedy algorithms
+                            on a k-armed Bernoulli bandit problem</i>
+                    </li>
+                    <li>
+                        <b>Tabular RL and function approximation</b> - <i>Explored SARSA, expected SARSA, Q-learning,
+                            and actor-critic with linear function approximation algorithms on the Frozen Lake and
+                            Cart-pole domains from the OpenAI gym environment suite</i>
+                    </li>
+                    <li>
+                        <b>Offline-RL</b> - <i>Explored imitation learning and fitted Q-learning methods to learn a
+                            policy from collected data</i>
+                    </li>
+                    <li>
+                        <b>Project</b> - <i>For our project, we investigated the well-known <a href="https://arxiv.org/abs/1703.02702" target="_blank">Robust Adversarial Reinforcement Learning (RARL)</a> scheme used to have an
+                            agent
+                            learn a more robust and generalized policy. We followed the methodology in the paper using
+                            an updated learning method (<a href="https://proceedings.mlr.press/v80/fujimoto18a.html" target="_blank">TD3</a>) and different environments. We found similar behavior and
+                            results as produced in the original paper, confirming the published results and promise of
+                            RARL. The full project report can be found <a href="./assets/RARL.pdf" target="_blank">here.</a></i>
+                    </li>
+                </ol>
+
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
