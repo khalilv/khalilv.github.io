@@ -1,0 +1,151 @@
+<!-- TEMPLATE FOR CREATING NEW PAGES. DONT FORGET TO ADD LINK IN NAVBAR -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | COMP 514</title>
+    <meta name="description" content="A course I took on applied robotics">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
+
+    <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <h4 class="content-title">COMP 514 - Applied Robotics</h4>
+        <ul>
+            <li>
+                This was an Applied Robotics course that I took during my Masters at
+                McGill. Some
+                of the important
+                topics we covered are listed below.
+                <ul>
+                    <li>
+                        <b>Rigid-body Pose</b> - <i>Configuration space, task space, translations, rotations, reference
+                            frames, Euler angles, quaternions
+                        </i>
+                    </li>
+                    <li>
+                        <b>Rigid-body Twists</b> - <i>Angular velocity, homogeneous transformations, rigid-body
+                            kinematics, twist, adjoint map </i>
+                    </li>
+                    <li>
+                        <b>Trajectory Generation</b> - <i>Time scaling, paths, straight-line trajectories, first-order
+                            polynomial trajectories, third-order polynomial trajectories, fifth-order polynomial
+                            trajectories, trajectory generation via waypoints and issues </i>
+                    </li>
+                    <li>
+                        <b>Potential Field</b> - <i>Attractive potential fields, repulsive potential fields, total
+                            potential fields, deadlocks, narrow passages, local minima, hessian, oscillation </i>
+                    </li>
+                    <li>
+                        <b>Kinematics</b> - <i>Forward kinematics, velocity kinematics, jacobian, inverse kinematics,
+                            pseudo-inverse, redundancy, singularity, manipulability
+                        </i>
+                    </li>
+                    <li>
+                        <b>Dynamics
+                        </b> - <i>Newton's second law, moment of inertia, angular momentum, newton-euler method,
+                            lagrangian formulation, rigid-body dynamics, rigid-body chains, inverse dynamic control, PD
+                            controller, stiffness, damping, redundancy </i>
+                    </li>
+                    <li>
+                        <b>Force Control and Contacts</b> - <i>Constraint kinematics, dynamics with contact, hybrid
+                            motion-force control, compliance, impedance control </i>
+                    </li>
+                    <li>
+                        <b>Collision Avoidance</b> - <i>Collision detection, collision distance, point clouds, bounding
+                            volumes, Gilbert-Johnson-Keerthi (GJK) algorithm for collision detection, probabilistic
+                            roadmap, bug algorithms, optimization vs sampling-based approaches </i>
+                    </li>
+                    <li>
+                        <b>Constrained Optimization</b> - <i>Convex optimization, Newton's method, linear equality
+                            constraints, interior-point (barrier) method, inverse kinematics with redundancy resolution,
+                            singularity avoidance </i>
+                    </li>
+                    <li>
+                        <b>Grasping</b> - <i>Object kinematics, object wrench, grasp matrix, form closure, force
+                            closure, internal force, maintaining contacts, Coulombs friction model, friction cone,
+                            grasping force optimization, where to grasp </i>
+                    </li>
+                    <li>
+                        <b>Pick and Place</b> - <i>Reach object, grasp object, move object, release object, switching
+                            between subtasks, when to compensate object dynamics </i>
+                    </li>
+                    <li>
+                        <b>Sensors</b> - <i>monocular and stereo cameras, lidar, radar, sonar, building maps from sensor
+                            data </i>
+                    </li>
+                    <li>
+                        <b>Locomotion</b> - <i>Gait, bipedal gait, duty factor, stride, quadruped gait, underactuated
+                            robots,
+                            contact constraints, center-of-mass, floating-based representations, stance vs swing</i>
+                    </li>
+                    <li>
+                        <b>Whole-body Control</b> - <i>Prioritized control, hierarchical kinematic/dynamic control,
+                            control as an optimization problem, base planning, base control, static and dynamic balance,
+                            support polygon, center of pressure
+                        </i>
+                    </li>
+                </ul>
+            </li>
+            <li>We also had eight assignments throughout the course. They were all based on <b>ROS1 in C++</b>
+                <ol>
+                    <li>
+                        <b>Husky Teleop Controller</b> - <i>Controlled the husky robot with keyboard commands</i>
+                    </li>
+                    <li>
+                        <b>Drone trajectory planning</b> - <i>Implemented a third-order polynomial trajectory to guide
+                            the drone to the target</i>
+                    </li>
+                    <li>
+                        <b>Inverse Kinematics</b> - <i>Implemented an inverse kinematics controller with redundancy
+                            resolution to move a simulated Kinova arm to a desired end effector pose</i>
+                    </li>
+                    <li>
+                        <b>Inverse Dynamics</b> - <i>Implemented an inverse dynamics controller with redundancy
+                            resolution to move a simulated Kinova arm to a desired end effector pose</i>
+                    </li>
+                    <li>
+                        <b>Orientation Control</b> - <i>Added end effector orientation control to my previous inverse
+                            dynamics controller</i>
+                    </li>
+                    <li>
+                        <b>Kinova arm bowling</b> - <i>Used ROS-actions to sequentially move the Kinova arm to a series
+                            of locations to knock down targets</i>
+                    </li>
+                    <li>
+                        <b>Pick-and-Place</b> - <i>Implemented a pick-and-place process to grasp an object and drop it
+                            in a bowl. See below for a working demo of my implementation!</i>
+                    </li>
+                    <li>
+                        <b>Collision avoidance</b> - <i>Implemented a navigation system to drive the husky robot to the
+                            goal, using lidar for collision avoidance</i>
+                    </li>
+                    <video autoplay muted loop width="70%" style="padding-top: 20px;">
+                        <source src="./videos/pick_and_place.mp4" type="video/mp4">
+                    </video>
+                </ol>
+
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
