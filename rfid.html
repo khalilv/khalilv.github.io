@@ -1,0 +1,192 @@
+<!-- TEMPLATE FOR CREATING NEW PAGES. DONT FORGET TO ADD LINK IN NAVBAR -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Khalil Virji | RFID Touchless Checkout System</title>
+    <meta name="description"
+        content="A touchless RFID based checkout system that I built and tested at a home hardware">
+    <meta name="author" content="Khalil Virji">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="https://kit.fontawesome.com/2ac9e1970c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+</head>
+
+<body>
+    <div class="titlebar">
+        <h3 class="title">Khalil Virji</h3>
+    </div>
+
+    <div class="content">
+        <div class="back-btn">
+            <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        </div>
+        <h4 class="content-title">RFID Touchless Checkout System</h4>
+        <ul>
+            <li>
+                <b><span class="list-item-title">Demo</span></b>
+                <ul>
+                    <li>
+                        <iframe width="70%" height="420" src="https://www.youtube-nocookie.com/embed/C3T2gVXWuz4"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b><span class="list-item-title">Details</span></b>
+                <div class="list-item-content">
+                    <p>This RFID touchless checkout system was the flagship product of Dynamic Integration
+                        Technologies, a startup that I co-founded with a close friend <a
+                            href="https://www.linkedin.com/in/shakil-jiwa" , target="_blank">Shakil Jiwa</a>. The
+                        journey began
+                        in the summer of 2020 when both of us found our internships canceled due to the COVID-19
+                        pandemic. It was during this time that Shakil was introduced to UHF RFID technology by a
+                        colleague. The idea that this technology could uniquely identify tagged items without requiring
+                        a direct line of sight and read up to 1000 items per second intrigued us, even though we had
+                        minimal background in the field.
+                    </p>
+                    <p>Our initial experiments were promising, and with the growing demand for touchless technology, we
+                        conceptualized a touchless checkout and inventory management system using UHF RFID technology.
+                        We took our vision and transformed it into a reality in Shakil's apartment, tagging various
+                        items such as books, food, and clothing. Our goal was to read all these items simultaneously as
+                        the user approached a checkout screen. The aim was to eliminate the need for users to
+                        individually scan each barcode, offering a touchless and efficient checkout process.
+                    </p>
+                    <p>
+
+                        As we delved deeper into our experiments, we began to grasp the potential of UHF RFID readers,
+                        as well as the inherent limitations. For instance, the accuracy of readings depended on the type
+                        of object. Bags filled with clothes and books consistently achieved 100% accuracy in our trials,
+                        even with up to 50 items per bag. However, when items made of metal or liquid were present,
+                        accuracy
+                        dropped. This limitation is a known issue with UHF RFID technology. Special tags were available
+                        to mitigate this problem, but they were more expensive than the standard tags, which cost around
+                        $0.07 each. When dealing with hundreds or thousands of items in a store, this could
+                        significantly impact the cost-effectiveness of the system. Another significant limitation was
+                        the tagging process itself. To make the system work, RFID tags had to be affixed to each item,
+                        similar to barcodes. This tagging process had to be done at the store level, as it wasn't
+                        currently performed at the supplier level, and this approach wouldn't scale well with an
+                        increasing volume of stock. Despite these limitations, we remained committed to the idea of an
+                        RFID-based touchless checkout system and the promising potential of RFID technology as a whole
+                        for various
+                        applications.
+
+                    </p>
+                    <p>
+                        A few months later, we presented our idea and prototype to a venture capitalist in Ontario,
+                        hoping for an evaluation and a chance to pilot our concept in a retail store. By this point, we
+                        had acquired all the necessary hardware and developed an API to communicate with the reader,
+                        making it easy to visualize scanned items. During our pitch to the VC, he displayed a keen
+                        interest, although he didn't fully grasp the limitations and potential use cases of our idea.
+                        Halfway through the meeting, he drove us to a home hardware and introduced us to the store
+                        owner, and before we knew it, we had a
+                        store willing to test our system, a promise of funding, and the backing of the venture
+                        capitalist. While this was an incredible opportunity, it came with challenges. Our system
+                        realistically couldn't function optimally in a hardware store due to the types of materials
+                        involved, which made reading accurately difficult. Additionally, the volume of incoming items
+                        posed a
+                        significant hurdle, as tagging them all would require a major operational change. We raised
+                        these concerns during the meeting, but sometimes in the world of startups, you have to seize the
+                        opportunities that present themselves.
+                    </p>
+                    <p>
+                        Over the following months, we established a testbed with approximately 100 random items from the
+                        hardware store, including hardware tools and paint cans which we knew would be difficult. We
+                        developed a comprehensive checkout
+                        system comprising:
+
+                    <ul>
+                        <li>A ThingMagic Sargas 2-Port UHF RFID Reader</li>
+                        <li>Two RFID antennas strategically positioned to maximize coverage </li>
+                        <li>A handheld RFID tag writer</li>
+                        <li>A tablet for use as the checkout screen</li>
+                        <li>An Android application for easily writing UPC codes to RFID tags</li>
+                        <li>An API for communication with the RFID reader to initiate and terminate scanning</li>
+                        <li>An ultrasound sensor to trigger scanning as the user approaches the checkout screen</li>
+                        <li> A front-end interface for visualizing scanned items in a user-friendly format and
+                            simulating a
+                            touchless payment interface</li>
+                    </ul>
+                    With this system, we achieved a 100% success rate on all items in our testbed, provided that
+                    each cart or bag contained 30 items or fewer.
+                    </p>
+                    <p>
+                        Unfortunately, our progress coincided with a worsening COVID situation, particularly in eastern
+                        Canada. The home hardware shut down shortly after our initial system iteration, forcing us to
+                        return to testing at Shakil's house. As time passed, and with no clear end to the lockdown in
+                        sight, our relationship with the venture capitalist began to deteriorate. He still struggled to
+                        understand the limitations of our system and insisted on making it work specifically for the
+                        hardware store before investing, despite our recommendation to shift the pilot to a more
+                        suitable store, like a local clothing or sports store. During this period, we explored other
+                        opportunities, but many stores, especially smaller local ones, were either locked down or facing
+                        staff shortages. Gradually, without explicitly saying it, both of us shifted our focus back to
+                        our studies, as we were still pursuing our
+                        bachelor's degrees.
+                    </p>
+                    <p>
+                        A few months later, Shakil was accepted into a Ph.D. program at UC Irvine, and I secured a
+                        position as a Software Developer at CloudOps. This just about marked the end of our
+                        entrepreneurial
+                        venture. Most of the technology remains in my apartment in Montreal, but it has been years since
+                        we last worked on it. Dynamic Integration, the company we established for this project, has
+                        since been dissolved, as both of us are now in graduate school pursuing higher education and
+                        a different
+                        scope of work.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <b><span class="list-item-title">Takeaways</span></b>
+                <div class="list-item-content">
+                    <p>On paper this may be classified as a <i>failed</i> startup but when I look back on the experience, for
+                        me it was anything but that. Beyond the skills and experience I gained, what I cherish most is
+                        the amount of fun I
+                        had working on this project with Shakil.
+                        To conceive an idea, delve into technology we were
+                        unfamiliar with, build a working prototype from scratch, pitch and market it to a venture
+                        capitalist, and
+                        test
+                        it with real products at the age of 21, all while balancing our studies, is a tremendous
+                        personal
+                        success, even if we did come out in the negatives money wise. It gives me assurance that I'll
+                        do okay in life and opportunities can come out of nowhere, you just have to be open and willing
+                        to learn.
+                    </p>
+                    <p>As a final thought, it's funny how COVID both catalyzed the start of this venture and played a
+                        significant role in its end. If you've made it this far, thanks for reading, and enjoy the
+                        media.</p>
+
+                </div>
+            </li>
+            <li>
+                <b><span class="list-item-title">Media</span></b>
+                <div class="list-item-content">
+                    <video controls height="300px" width="70%">
+                        <source src="./videos/rfid5.mp4" type="video/mp4">
+                    </video>
+                    <video controls height="300px" width="70%">
+                        <source src="./videos/rfid2.mp4" type="video/mp4">
+                    </video>
+                    <video controls height="300px" width="70%">
+                        <source src="./videos/rfid3.mp4" type="video/mp4">
+                    </video>
+                    <video controls height="300px" width="70%">
+                        <source src="./videos/rfid4.MP4" type="video/mp4">
+                    </video>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>
