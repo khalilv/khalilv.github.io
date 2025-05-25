@@ -28,15 +28,41 @@
         <h4 class="content-title">About</h4>
         <ul>
             <li>
-                <b><span class="list-item-title">Education</span></b>
-                <ul>
-                    <li>
-                        M.Sc. in Computer Science, McGill University | <i>Graduated June 2024</i>
-                    </li>
-                    <li>
-                        B.Sc Major Mathematics and Computer Science, McGill University | <i>Graduated May 2022</i>
-                    </li>
-                </ul>
+                <b><span class="list-item-title">Bio</span></b>
+
+                <div class="list-item-content" style="font-size: 13.5px;">
+                    <p>
+                        I am a computer scientist interested in deep learning, computer vision, and robotics. Much of my
+                        work focuses on active perception and learning models of physical processes to support
+                        decision-making in autonomous systems.
+                    </p>
+                    <p>
+                        I am currently a Machine Learning Researcher at the University of California, Irvine, where I
+                        develop deep learning models for climate and weather forecasting on sub-seasonal to seasonal
+                        timescales. Previously, I completed my M.Sc. in Computer Science at McGill University in the <a
+                            href="https://www.cim.mcgill.ca/~mrl/" target="_blank">Mobile Robotics Lab</a>, supervised
+                        by Dr. Gregory Dudek. My research focused on learning-based vision and control algorithms for
+                        autonomous underwater vehicles (AUVs). For my thesis, I built a robotic system to autonomously
+                        track, follow, and recover scuba divers, deploying it in the open ocean under harsh conditions.
+                        I also worked on an off-road navigation project, where we trained a transformer network to
+                        predict future terrain conditions from visual input and candidate action sequences, enabling an
+                        autonomous vehicle to stay on favorable terrain while navigating unmapped forests.
+                    </p>
+                    <p>
+                        Prior to graduate school, I completed my B.Sc. at McGill University, majoring in Mathematics and
+                        Computer Science. As an undergraduate, I largely focused on software development/engineering and worked
+                        professionally as a software developer at <a
+                            href="https://crm.consulting/company/tractionondemand/" target="_blank">Traction on
+                            Demand</a> (now acquired by <a href="https://www.salesforce.com/"
+                            target="_blank">Salesforce</a>), <a href="https://www.cloudops.com/"
+                            target="_blank">CloudOps</a>, <a href="https://www.sensequake.com/"
+                            target="_blank">Sensequake</a>, and <a href="https://colorkarma.com/"
+                            target="_blank">ColorKarma</a>.
+                    </p>
+
+                </div>
+
+
             </li>
             <li>
                 <b><span class="list-item-title">Links</span></b>
@@ -56,39 +82,21 @@
                 </ul>
             </li>
             <li>
-                <b><span class="list-item-title">Bio</span></b>
-
-                <div class="list-item-content" style="font-size: 13.5px;">
-                    <p>
-                        I am a computer scientist interested in machine learning, deep learning, computer vision, and
-                        robotics, particularly for applications in earth science. My research centers on learning models
-                        of physical processes and control systems to support decision-making.
-                    </p>
-                    <p>
-                        I am currently an Assistant Specialist at the University of California, Irvine, where I am
-                        developing deep-learning models for climate and weather forecasting over sub-seasonal to
-                        seasonal timescales. Previously, I completed my M.Sc. in Computer Science at McGill University
-                        in the <a href="https://www.cim.mcgill.ca/~mrl/" target="_blank">Mobile Robotics Lab
-                        </a> supervised by Dr. Gregory Dudek. During graduate school, I focussed
-                        on vision-based control algorithms for autonomous underwater vehicles (AUVs), looking at both
-                        traditional and deep reinforcement learning control paradigms. I built a robotic system to
-                        track, follow, and recover scuba divers autonomously, and deployed it in the ocean under harsh
-                        conditions. Prior to graduate school, I completed my B.Sc. at McGill University, majoring in
-                        Mathematics and Computer Science. As an undergraduate, I largely focused on software
-                        development/engineering and worked professionally as a software developer at <a
-                            href="https://crm.consulting/company/tractionondemand/" target="_blank">Traction on
-                            Demand</a>
-                        (now acquired by <a href="https://www.salesforce.com/" target="_blank">Salesforce</a>), <a
-                            href="https://www.cloudops.com/" target="_blank">CloudOps</a>, <a
-                            href="https://www.sensequake.com/" target="_blank">Sensequake</a>, and <a
-                            href="https://colorkarma.com/" , target="_blank">ColorKarma</a>.
-                    </p>
-                </div>
-
-
+                <b><span class="list-item-title"><a href="./experience.html">Experience</a></span></b>
             </li>
             <li>
-                <b><span class="list-item-title">Research Projects</span></b>
+                <b><span class="list-item-title">Education</span></b>
+                <ul>
+                    <li>
+                        M.Sc. in Computer Science, McGill University | <i>Graduated June 2024</i>
+                    </li>
+                    <li>
+                        B.Sc in Mathematics and Computer Science, McGill University | <i>Graduated May 2022</i>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <b><span class="list-item-title">Research</span></b>
                 <ul>
                     <li>
 
@@ -128,7 +136,7 @@
                                         and quantifies inherent uncertainty, while the nonlinear MPC
                                         suggests optimal throttle settings considering vehicle intricacies. This allows
                                         a balance between goal attainment
-                                        speed and model uncertainty influenced by velocity. Our approach
+                                        speed and model uncertainty. Our approach
                                         consistently outperforms baselines in predicting future events and integrates
                                         the vehicle's kinematic model for enhanced decision-making.</p>
                                 </div>
@@ -187,17 +195,19 @@
                                     <img src="./images/drifters.png" width="100%">
                                 </div>
                                 <div class="columns ten">
-                                    <p> Due to intricate interactions between air and water,
+                                    <p> Due to intricate interactions between the ocean and the atmosphere,
                                         predicting the paths of floating objects in the ocean is challenging, especially
                                         for long-term horizons. Despite these complexities, long-term ocean trajectory
                                         prediction is vital for search and rescue operations, ecological research, and
                                         disaster response. Inspired by the DARPA Forecasting Floats in Turbulence
                                         challenge, we introduce an open-source benchmark dataset for evaluating ocean
                                         trajectory models. This dataset incorporates ocean drifter paths and historical
-                                        wind and current data, aiming to advance machine learning models tailored to the complexities of
+                                        wind and current data, aiming to advance machine learning models tailored to the
+                                        complexities of
                                         drifter trajectory
                                         prediction. Alongside this benchmark dataset, we offer a baseline
-                                        solution created using <a href="https://opendrift.github.io/" target="_blank">OpenDrift</a>, an open-source tool for modeling object
+                                        solution created using <a href="https://opendrift.github.io/"
+                                            target="_blank">OpenDrift</a>, an open-source tool for modeling object
                                         trajectories in the ocean and atmosphere.</p>
                                 </div>
                             </div>
@@ -206,26 +216,25 @@
                 </ul>
             </li>
             <li>
-                <b><span class="list-item-title"><a href="./experience.html">Experience</a></span></b>
-            </li>
-            <li>
-                <b><span class="list-item-title">Personal Projects</span></b>
+                <b><span class="list-item-title">Projects</span></b>
                 <ul>
                     <li>
                         <a href="./saveaminute.html">Save a Minute</a> |
                         <i>JavaScript, HTML, CSS</i>
                     </li>
                     <li>
+                        <a href="https://github.com/khalilv/popcoin" target="_blank">Colosseum Survival</a> | <i>Python</i>
+                    </li>
+                    <li>
                         <a href="./temperature.html">Automated Temperature and Humidity Monitoring System </a> |
                         <i>Arduino, Node.js,
-                            MongoDB, Arduino Nano 33 IoT microcontroller, RHT03 temperature sensor</i>
+                            MongoDB</i>
                     </li>
                     <li>
-                        <a href="./rfid.html">RFID Touchless Checkout System</a> | <i>Java, Linux, Sargas UHF RFID
-                            reader, UHF RFID tags, ultrasonic sensors</i>
+                        <a href="./rfid.html">RFID Touchless Checkout System</a> | <i>Java, Arduino, UHF RFID Technology</i>
                     </li>
                     <li>
-                        <a href="./legendsofandor.html">Legends Of Andor</a> | <i>Android, Java, XML, SpringBoot</i>
+                        <a href="./legendsofandor.html">Legends Of Andor</a> | <i>Java, XML, SpringBoot, Android Studio</i>
                     </li>
                     <li>
                         <a href="./brickbreaker.html">Brick Breaker</a> | <i>JavaScript, HTML, CSS</i>
@@ -239,8 +248,7 @@
                 </ul>
             </li>
             <li>
-                <span class="list-item-title"><b>Web Design</b> - <i class="small-text">Professional websites I created
-                        for clients</i></span>
+                <span class="list-item-title"><b>Web Design</b> - <i class="small-text">Professional websites I created for friends and family. (Links may be broken if hosting has expired.) </i></span>
                 <ul>
                     <li>
                         <a href="https://zenbroidery.github.io/" target="_blank">Zenbroidery</a> | <i>Custom Embroidered
