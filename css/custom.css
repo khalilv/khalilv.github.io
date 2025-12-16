@@ -146,7 +146,7 @@ img {
 
 /* Nested lists */
 .content ul ul {
-  margin-top: 1.5rem;
+  margin-top: 1.4rem;
   margin-left: 2rem;
   list-style-type: disc;
 }
@@ -187,6 +187,7 @@ img {
   transition: all 0.2s ease;
   border-radius: 3px;
   font-weight: 400;
+  font-size: 1.8rem;
 }
 
 .nav-links a:hover,
@@ -324,14 +325,14 @@ a:hover {
   .sidebar-nav {
     display: block;
     position: fixed;
-    left: 5%;
+    left: clamp(20px, 5%, 60px);
     top: 150px;
     width: 200px;
     z-index: 100;
   }
 
   .content {
-    margin-left: calc(5% + 220px);
+    margin-left: clamp(240px, calc(5% + 220px), 280px);
     margin-right: 5%;
     width: auto;
     max-width: 700px;
@@ -353,7 +354,7 @@ a:hover {
 /* Large Desktop (1200px+) */
 @media (min-width: 1200px) {
   .sidebar-nav {
-    left: calc(50% - 480px - 220px);
+    left: clamp(20px, calc(50% - 480px - 220px), calc(50% - 480px - 220px));
   }
 
   .content {
@@ -471,7 +472,7 @@ a:hover {
   background: transparent;
   color: #1EAEDB !important;
   border-radius: 3px;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 400;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -500,7 +501,7 @@ a:hover {
 }
 
 .project-title {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #1EAEDB;
 }
@@ -521,7 +522,7 @@ a:hover {
 }
 
 .coursework-header {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   color: #222222;
   margin-top: 3rem;
@@ -574,7 +575,7 @@ a:hover {
    =================================== */
 
 .content > p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.8;
   margin-bottom: 2rem;
@@ -605,7 +606,7 @@ a:hover {
 }
 
 .education-item h5 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #333333;
@@ -621,11 +622,11 @@ a:hover {
 .education-date {
   font-style: italic;
   color: #666666;
-  font-size: 1.3rem;
+  font-size: 1.35rem !important;
 }
 
 .education-thesis {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: #555555;
   margin-top: 0.5rem;
 }
@@ -674,7 +675,7 @@ a:hover {
 }
 
 .paper-venue {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
   color: #666666;
   margin-bottom: 1.5rem;
 }
@@ -725,7 +726,7 @@ a:hover {
 }
 
 .project-name {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #1EAEDB;
   flex: 1;
@@ -733,7 +734,7 @@ a:hover {
 }
 
 .project-item .project-tech {
-  font-size: 1.2rem;
+  font-size: 1.35rem;
   color: #666666;
   font-style: italic;
   white-space: nowrap;
