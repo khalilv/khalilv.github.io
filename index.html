@@ -22,21 +22,42 @@
         <h3 class="title">Khalil Virji</h3>
     </div>
 
+    <nav class="sidebar-nav" id="sidebarNav">
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="./experience.html">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#coursework">Coursework</a></li>
+        </ul>
+        <div class="nav-footer">
+            <div class="nav-footer-links">
+                <a href="./assets/resume.pdf" target="_blank" aria-label="Resume"><i class="fas fa-file-alt"></i></a>
+                <a href="https://scholar.google.com/citations?user=7PK5bd4AAAAJ" target="_blank" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                <a href="https://github.com/khalilv" target="_blank" aria-label="Github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/khalilvirji/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:khalil.virji1@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <button class="hamburger-menu" id="hamburgerBtn" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <div class="content">
 
 
-        <h4 class="content-title">About</h4>
-        <ul>
-            <li>
-                <b><span class="list-item-title">Bio</span></b>
+        <h4 id="about" class="content-title">About</h4>
 
-                <div class="list-item-content" style="font-size: 13.5px;">
-                    <p>
-                        I am a computer scientist interested in deep learning, computer vision, and robotics. Much of my
-                        work focuses on active perception and learning models of physical processes to support
-                        decision-making.
-
-                    </p>
+        <p>
+            I am a computer scientist interested in deep learning, computer vision, and robotics. Much of my
+            work focuses on active perception and learning models of physical processes to support
+            decision-making.
+        </p>
                     <p>
                         I am currently a Machine Learning Researcher at the University of California, Irvine, where I
                         develop deep learning models for climate and weather forecasting on sub-seasonal to seasonal
@@ -64,71 +85,39 @@
                             target="_blank">CloudOps</a>, <a href="https://www.sensequake.com/"
                             target="_blank">Sensequake</a>, and <a href="https://colorkarma.com/"
                             target="_blank">ColorKarma</a>.
-                    </p>
-                    <p>
-                        <a href="./assets/resume.pdf" target="_blank">Resume</a> |
-                        <a href="https://github.com/khalilv" target="_blank">Github</a> |
-                        <a href="https://www.linkedin.com/in/khalilvirji/" target="_blank">LinkedIn</a> |
-                        <a href="mailto:khalil.virji1@gmail.com" target="_blank">Email</a>
-                    </p>
+        </p>
+
+        <h4 id="education" class="content-title">Education</h4>
+        <div class="education-grid">
+            <div class="education-item">
+                <h5>M.Sc. in Computer Science</h5>
+                <p>McGill University</p>
+                <p class="education-date">Graduated June 2024</p>
+                <p class="education-thesis">Thesis: <a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=7PK5bd4AAAAJ&citation_for_view=7PK5bd4AAAAJ:2osOgNQ5qMEC" target="_blank">Following scuba divers with an autonomous underwater vehicle <i class="fas fa-file-alt"></i></a></p>
+            </div>
+            <div class="education-item">
+                <h5>B.Sc in Mathematics and Computer Science</h5>
+                <p>McGill University</p>
+                <p class="education-date">Graduated May 2022</p>
+            </div>
+        </div>
+
+        <h4 id="research" class="content-title">Research</h4>
+        <div class="research-papers">
+            <div class="paper">
+                <h5 class="paper-title">Uncertainty-aware hybrid paradigm of nonlinear MPC and model-based RL for offroad navigation: Exploration of transformers in the predictive model</h5>
+                <p class="paper-authors">Faraz Lotfi, <b>Khalil Virji</b>, Farnoosh Faraji, Lucas Berry, Andrew Holliday, David Meger, and Gregory Dudek</p>
+                <p class="paper-venue"><i>Presented at the 2024 International Conference on Robotics and Automation (ICRA)</i></p>
+                <div class="paper-links">
+                    <a href="https://arxiv.org/abs/2310.00760" target="_blank" class="paper-link"><i class="fas fa-file-alt"></i> Paper</a>
+                    <a href="https://github.com/FARAZLOTFI/offroad_autonomous_navigation/" target="_blank" class="paper-link"><i class="fab fa-github"></i> Github</a>
                 </div>
-
-
-            </li>
-
-            <!-- <li>
-                <b><span class="list-item-title">Links</span></b>
-                <ul>
-                    <li>
-                        <a href="https://github.com/khalilv" target="_blank">Github</a>
-                    </li>
-                    <li>
-                        <a href="./assets/resume.pdf" target="_blank">Resume</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/khalilvirji/" target="_blank">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="mailto:khalil.virji1@gmail.com" target="_blank">Email</a>
-                    </li>
-                </ul>
-            </li> -->
-            <li>
-                <b><span class="list-item-title"><a href="./experience.html">Experience</a></span></b>
-            </li>
-            <li>
-                <b><span class="list-item-title">Education</span></b>
-                <ul>
-                    <li>
-                        M.Sc. in Computer Science, McGill University | <i>Graduated June 2024</i>
-                    </li>
-                    <li>
-                        B.Sc in Mathematics and Computer Science, McGill University | <i>Graduated May 2022</i>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <b><span class="list-item-title">Research</span></b>
-                <ul>
-                    <li>
-
-                        <b>Uncertainty-aware hybrid paradigm of nonlinear MPC and model-based RL for offroad navigation:
-                            Exploration of transformers in the predictive model</b> - Faraz Lotfi,
-                        <b>Khalil Virji</b>, Farnoosh Faraji, Lucas Berry, Andrew Holliday, David Meger, and Gregory
-                        Dudek
-
-                        <div class="list-item-content">
-                            <i> Presented at the 2024 International Conference on Robotics and Automation (ICRA)</i> |
-                            <a href="https://arxiv.org/abs/2310.00760" target="_blank">Paper</a>
-                            | <a href="https://github.com/FARAZLOTFI/offroad_autonomous_navigation/" ,
-                                target="_blank">Github</a>
+                <div class="paper-abstract">
+                    <div class="row">
+                        <div class="columns four">
+                            <img src="./images/rc_car.jpg" width="100%">
                         </div>
-                        <div class="list-item-content">
-                            <div class="row">
-                                <div class="columns two">
-                                    <img src="./images/rc_car.jpg" width="100%">
-                                </div>
-                                <div class="columns ten">
+                        <div class="columns eight">
                                     <p> We investigate a hybrid control paradigm merging nonlinear model predictive
                                         control
                                         (MPC) and model-based reinforcement learning (RL) for autonomous navigation of a
@@ -150,29 +139,28 @@
                                         a balance between goal attainment
                                         speed and model uncertainty. Our approach
                                         consistently outperforms baselines in predicting future events and integrates
-                                        the vehicle's kinematic model for enhanced decision-making.</p>
-                                </div>
-                            </div>
+                                        the vehicle's kinematic model for enhanced decision-making.
+                                    </p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                </div>
+            </div>
 
-                        <b>Robust Scuba Diver Tracking and Recovery in Open
-                            Water Using YOLOv7, SORT, and Spiral Search</b> - Faraz Lotfi, <b>Khalil Virji</b>, Gregory
-                        Dudek
-
-                        <div class="list-item-content">
-                            <i> Presented at the 2023 Conference on Robots and Vision (CRV)</i> | <a
-                                href="https://ieeexplore.ieee.org/abstract/document/10229914" target="_blank">Paper</a>
-                            | <a href="./assets/CRV_2023.pdf" target="_blank">Poster</a> | <a
-                                href="https://github.com/FARAZLOTFI/scuba" , target="_blank">Github</a>
+            <div class="paper">
+                <h5 class="paper-title">Robust Scuba Diver Tracking and Recovery in Open Water Using YOLOv7, SORT, and Spiral Search</h5>
+                <p class="paper-authors">Faraz Lotfi, <b>Khalil Virji</b>, Gregory Dudek</p>
+                <p class="paper-venue"><i>Presented at the 2023 Conference on Robots and Vision (CRV)</i></p>
+                <div class="paper-links">
+                    <a href="https://ieeexplore.ieee.org/abstract/document/10229914" target="_blank" class="paper-link"><i class="fas fa-file-alt"></i> Paper</a>
+                    <a href="./assets/CRV_2023.pdf" target="_blank" class="paper-link"><i class="fas fa-image"></i> Poster</a>
+                    <a href="https://github.com/FARAZLOTFI/scuba" target="_blank" class="paper-link"><i class="fab fa-github"></i> Github</a>
+                </div>
+                <div class="paper-abstract">
+                    <div class="row">
+                        <div class="columns four">
+                            <img src="./images/aqua_scuba.jpg" width="100%">
                         </div>
-                        <div class="list-item-content">
-                            <div class="row">
-                                <div class="columns two">
-                                    <img src="./images/aqua_scuba.jpg" width="100%">
-                                </div>
-                                <div class="columns ten">
+                        <div class="columns eight">
                                     <p> We address the challenge of underwater object tracking using
                                         a
                                         two-part approach: vision and control. Our method leverages AQUA, a
@@ -186,27 +174,27 @@
                                         spiral search
                                         algorithm for target recovery, we demonstrate strong long-term tracking
                                         performance on the VDD-C dataset
-                                        and in open water experiments, even in strong currents.</p>
-                                </div>
-                            </div>
+                                        and in open water experiments, even in strong currents.
+                                    </p>
                         </div>
-                    </li>
-                    <li>
+                    </div>
+                </div>
+            </div>
 
-                        <b>DRIFT-NCRN: A Benchmark Dataset for Drifter Trajectory Prediction</b> - Johanna Hansen,
-                        <b>Khalil Virji</b>, Travis Manderson, David Meger, and Gregory Dudek
-
-                        <div class="list-item-content">
-                            <a href="./assets/COMP_400_Report.pdf" target="_blank">Report</a>
-                            | <a href="https://www.mcgill.ca/ose/files/ose/khalil_poster.pdf" target="_blank">Poster</a>
-                            | <a href="https://github.com/johannah/drift-predict" , target="_blank">Github</a>
+            <div class="paper">
+                <h5 class="paper-title">DRIFT-NCRN: A Benchmark Dataset for Drifter Trajectory Prediction</h5>
+                <p class="paper-authors">Johanna Hansen, <b>Khalil Virji</b>, Travis Manderson, David Meger, and Gregory Dudek</p>
+                <div class="paper-links">
+                    <a href="./assets/COMP_400_Report.pdf" target="_blank" class="paper-link"><i class="fas fa-file-alt"></i> Paper</a>
+                    <a href="https://www.mcgill.ca/ose/files/ose/khalil_poster.pdf" target="_blank" class="paper-link"><i class="fas fa-image"></i> Poster</a>
+                    <a href="https://github.com/johannah/drift-predict" target="_blank" class="paper-link"><i class="fab fa-github"></i> Github</a>
+                </div>
+                <div class="paper-abstract">
+                    <div class="row">
+                        <div class="columns four">
+                            <img src="./images/drifters.png" width="100%">
                         </div>
-                        <div class="list-item-content">
-                            <div class="row">
-                                <div class="columns two">
-                                    <img src="./images/drifters.png" width="100%">
-                                </div>
-                                <div class="columns ten">
+                        <div class="columns eight">
                                     <p> Due to intricate interactions between the ocean and the atmosphere,
                                         predicting the paths of floating objects in the ocean is challenging, especially
                                         for long-term horizons. Despite these complexities, long-term ocean trajectory
@@ -220,170 +208,136 @@
                                         prediction. Alongside this benchmark dataset, we offer a baseline
                                         solution created using <a href="https://opendrift.github.io/"
                                             target="_blank">OpenDrift</a>, an open-source tool for modeling object
-                                        trajectories in the ocean and atmosphere.</p>
-                                </div>
-                            </div>
+                                        trajectories in the ocean and atmosphere.
+                                    </p>
                         </div>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 id="projects" class="content-title">Projects</h4>
+        <div class="projects-grid">
+            <div class="project-item">
+                <a href="./saveaminute.html" class="project-name">Save a Minute</a>
+                <span class="project-tech">JavaScript, HTML, CSS</span>
+            </div>
+            <div class="project-item">
+                <a href="https://github.com/khalilv/popcoin" target="_blank" class="project-name">Colosseum Survival</a>
+                <span class="project-tech">Python</span>
+            </div>
+            <div class="project-item">
+                <a href="./temperature.html" class="project-name">Automated Temperature and Humidity Monitoring System</a>
+                <span class="project-tech">Arduino, Node.js, MongoDB</span>
+            </div>
+            <div class="project-item">
+                <a href="./rfid.html" class="project-name">RFID Touchless Checkout System</a>
+                <span class="project-tech">Java, Arduino, UHF RFID Technology</span>
+            </div>
+            <div class="project-item">
+                <a href="./legendsofandor.html" class="project-name">Legends Of Andor</a>
+                <span class="project-tech">Java, XML, SpringBoot, Android Studio</span>
+            </div>
+            <div class="project-item">
+                <a href="./brickbreaker.html" class="project-name">Brick Breaker</a>
+                <span class="project-tech">JavaScript, HTML, CSS</span>
+            </div>
+            <div class="project-item">
+                <a href="./connectfour.html" class="project-name">Connect Four</a>
+                <span class="project-tech">Java</span>
+            </div>
+            <div class="project-item">
+                <a href="./tinyshell.html" class="project-name">Tiny Shell</a>
+                <span class="project-tech">C</span>
+            </div>
+        </div>
+
+        <!-- <h4 class="content-title">Web Design</h4>
+        <p class="small-text">Professional websites I created for friends and family. (Links may be broken if hosting has expired.)</p>
+        <ul>
+            <li>
+                <a href="https://zenbroidery.github.io/" target="_blank">Zenbroidery</a> | <i>Custom Embroidered Towels</i>
             </li>
             <li>
-                <b><span class="list-item-title">Projects</span></b>
-                <ul>
-                    <li>
-                        <a href="./saveaminute.html">Save a Minute</a> |
-                        <i>JavaScript, HTML, CSS</i>
-                    </li>
-                    <li>
-                        <a href="https://github.com/khalilv/popcoin" target="_blank">Colosseum Survival</a> |
-                        <i>Python</i>
-                    </li>
-                    <li>
-                        <a href="./temperature.html">Automated Temperature and Humidity Monitoring System </a> |
-                        <i>Arduino, Node.js,
-                            MongoDB</i>
-                    </li>
-                    <li>
-                        <a href="./rfid.html">RFID Touchless Checkout System</a> | <i>Java, Arduino, UHF RFID
-                            Technology</i>
-                    </li>
-                    <li>
-                        <a href="./legendsofandor.html">Legends Of Andor</a> | <i>Java, XML, SpringBoot, Android
-                            Studio</i>
-                    </li>
-                    <li>
-                        <a href="./brickbreaker.html">Brick Breaker</a> | <i>JavaScript, HTML, CSS</i>
-                    </li>
-                    <li>
-                        <a href="./connectfour.html">Connect Four</a> | <i>Java</i>
-                    </li>
-                    <li>
-                        <a href="./tinyshell.html">Tiny Shell</a> | <i>C</i>
-                    </li>
-                </ul>
+                <a href="https://bcbearclub.com/" target="_blank">Bearclub</a> | <i>Recording artist from Vancouver, BC</i>
             </li>
             <li>
-                <span class="list-item-title"><b>Web Design</b> - <i class="small-text">Professional websites I created
-                        for friends and family. (Links may be broken if hosting has expired.) </i></span>
-                <ul>
-                    <li>
-                        <a href="https://zenbroidery.github.io/" target="_blank">Zenbroidery</a> | <i>Custom Embroidered
-                            Towels</i>
-                    </li>
-                    <li>
-                        <a href="https://bcbearclub.com/" target="_blank">Bearclub</a> | <i>Recording artist from
-                            Vancouver, BC</i>
-                    </li>
-                    <li>
-                        <a href="https://zeenaz.ca/" target="_blank">Zeenaz Cookbook</a> | <i>East African Style Indian
-                            Cuisine</i>
-                    </li>
-                </ul>
+                <a href="https://zeenaz.ca/" target="_blank">Zeenaz Cookbook</a> | <i>East African Style Indian Cuisine</i>
+            </li>
+        </ul> -->
+
+        <h4 id="coursework" class="content-title">Coursework</h4>
+        <div class="coursework-section">
+            <h5 class="coursework-header">Computer Science</h5>
+            <ul class="coursework-list">
+                <li><a href="./comp579.html">Reinforcement Learning</a></li>
+                <li><a href="./comp514.html">Applied Robotics</a></li>
+                <li><a href="https://www.mcgill.ca/study/2022-2023/courses/comp-551" target="_blank">Applied Machine Learning</a></li>
+                <li><a href="https://www.mcgill.ca/study/2022-2023/courses/comp-546" target="_blank">Computational Perception</a></li>
+                <li><a href="./comp424.html">Artificial Intelligence</a></li>
+                <li><a href="./comp558.html">Fundamentals of Computer Vision</a></li>
+                <li><a href="./comp599.html">Information Privacy and Security</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-417" target="_blank">Robotics and Intelligent Systems</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-400" target="_blank">Project in Computer Science</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-360" target="_blank">Algorithm Design</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-330" target="_blank">Theory of Computation</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-302" target="_blank">Programming Languages and Paradigms</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-310" target="_blank">Operating Systems</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-303" target="_blank">Software Design</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-273" target="_blank">Intro to Computer Systems</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-251" target="_blank">Algorithms and Data Structures</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-206" target="_blank">Intro to Software Systems</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-250" target="_blank">Intro to Computer Science</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/comp-202" target="_blank">Foundations of Programming</a></li>
+            </ul>
+
+            <h5 class="coursework-header">Mathematics</h5>
+            <ul class="coursework-list">
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-340" target="_blank">Discrete Mathematics</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-314" target="_blank">Advanced Calculus</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-317" target="_blank">Numerical Analysis</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-348" target="_blank">Euclidean Geometry</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-324" target="_blank">Statistics</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-323" target="_blank">Probability</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-315" target="_blank">Ordinary Differential Equations</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-318" target="_blank">Mathematical Logic</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-235" target="_blank">Algebra 1</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-236" target="_blank">Algebra 2</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-140" target="_blank">Calculus 1</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-141" target="_blank">Calculus 2</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-222" target="_blank">Calculus 3</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-242" target="_blank">Analysis 1</a></li>
+                <li><a href="https://www.mcgill.ca/study/2021-2022/courses/math-133" target="_blank">Linear Algebra and Geometry</a></li>
+            </ul>
+        </div>
+
+        <!-- <h4 class="content-title">Certificates and Awards</h4>
+        <ul>
+            <li>
+                Graduate Research Enhancement and Travel (GREAT) Award | <i>McGill University 2024</i>
             </li>
             <li>
-                <b><span class="list-item-title">Coursework</span></b>
-                <ul>
-                    <li>
-                        <a href="./comp579.html">COMP 579</a> -
-                        Reinforcement Learning <span>&#8226;</span>
-                        <a href="./comp514.html">COMP 514</a> -
-                        Applied Robotics <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2022-2023/courses/comp-551" target="_blank">COMP 551</a> -
-                        Applied Machine Learning <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2022-2023/courses/comp-546" target="_blank">COMP 546</a> -
-                        Computational Perception <span>&#8226;</span>
-                        <a href="./comp424.html">COMP 424</a> -
-                        Artificial Intelligence <span>&#8226;</span>
-                        <a href="./comp558.html">COMP 558</a> -
-                        Fundamentals of Computer Vision <span>&#8226;</span>
-                        <a href="./comp599.html">COMP 599</a> - Information Privacy and Security <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-417" target="_blank">COMP 417</a> -
-                        Robotics and Intelligent Systems <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-400" target="_blank">COMP 400</a> -
-                        Project in Computer Science <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-360" target="_blank">COMP 360</a> -
-                        Algorithm Design <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-330" target="_blank">COMP 330</a> -
-                        Theory of Computation <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-302" target="_blank">COMP 302</a> -
-                        Programming Languages and Paradigms <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-310" target="_blank">COMP 310</a> -
-                        Operating Systems <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-303" target="_blank">COMP 303</a> -
-                        Software Design <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-273" target="_blank">COMP 273</a> -
-                        Intro to Computer Systems <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-251" target="_blank">COMP 251</a> -
-                        Algorithms and Data Structures <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-206" target="_blank">COMP 206</a> -
-                        Intro to Software Systems <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-250" target="_blank">COMP 250</a> -
-                        Intro to Computer Science <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/comp-202" target="_blank">COMP 202</a> -
-                        Foundations of Programming
-                    </li>
-                    <li>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-340" target="_blank">MATH 340</a> -
-                        Discrete Mathematics <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-314" target="_blank">MATH 314</a> -
-                        Advanced Calculus <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-317" target="_blank">MATH 317</a> -
-                        Numerical Analysis <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-348" target="_blank">MATH 348</a> -
-                        Euclidean Geometry <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-324" target="_blank">MATH 324</a> -
-                        Statistics <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-323" target="_blank">MATH 323</a> -
-                        Probability <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-315" target="_blank">MATH 315</a> -
-                        Ordinary Differential Equations <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-318" target="_blank">MATH 318</a> -
-                        Mathematical Logic <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-235" target="_blank">MATH 235</a> -
-                        Algebra 1 <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-236" target="_blank">MATH 236</a> -
-                        Algebra 2 <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-140" target="_blank">MATH 140</a> -
-                        Calculus 1 <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-141" target="_blank">MATH 141</a> -
-                        Calculus 2 <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-222" target="_blank">MATH 222</a> -
-                        Calculus 3 <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-242" target="_blank">MATH 242</a> -
-                        Analysis 1 <span>&#8226;</span>
-                        <a href="https://www.mcgill.ca/study/2021-2022/courses/math-133" target="_blank">MATH 133</a> -
-                        Linear Algebra and Geometry
-                    </li>
-                </ul>
+                Tomlinson Engagement Award for Mentoring | <i>McGill University (2021, 2019 and 2018)</i>
             </li>
             <li>
-                <b><span class="list-item-title">Certificates and Awards</span></b>
-                <ul>
-                    <li>
-                        Graduate Research Enhancement and Travel (GREAT) Award | <i>McGill University 2024</i>
-                    </li>
-                    <li>
-                        Tomlinson Engagement Award for Mentoring | <i>McGill University (2021, 2019 and 2018)</i>
-                    </li>
-                    <li>
-                        MES Bourses d’excellence en sciences | <i>McGill University 2021</i>
-                    </li>
-                    <li>
-                        Salesforce Platform Developer 1 | <i>2020</i>
-                    </li>
-                    <li>
-                        Microsoft Technology Associate: Database Fundamentals | <i>2019</i>
-                    </li>
-                    <li>
-                        Microsoft Technology Associate: Introduction to Programming using Java | <i>2019</i>
-                    </li>
-                </ul>
+                MES Bourses d'excellence en sciences | <i>McGill University 2021</i>
             </li>
-        </ul>
+            <li>
+                Salesforce Platform Developer 1 | <i>2020</i>
+            </li>
+            <li>
+                Microsoft Technology Associate: Database Fundamentals | <i>2019</i>
+            </li>
+            <li>
+                Microsoft Technology Associate: Introduction to Programming using Java | <i>2019</i>
+            </li>
+        </ul> -->
 
     </div>
 
+    <!-- Footer removed - social links moved to sidebar navigation -->
+
+    <script src="js/navigation.js"></script>
 </body>
 
 </html>
-Côte-Vertu

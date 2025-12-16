@@ -1,34 +1,800 @@
-  .titlebar {
-    background-color: #ffe8d4;
-    height: 91px;
-    color: #818181;
-  }
+/* ===================================
+   CUSTOM STYLES - KHALIL VIRJI WEBSITE
+   =================================== */
 
+/* Color Palette - Original Theme
+   -----------------------------------
+   Primary: #ffe8d4 (peachy - titlebar and footer)
+   Accent: #1EAEDB (blue - Skeleton default)
+   Accent Hover: #0FA0CE (darker blue)
+   Background: #FFFFFF (white)
+   Text: #222222 (dark grey - Skeleton default)
+   Text Medium: #555555, #666666, #333333 (various greys)
+   Nav Text: #818181 (medium grey)
+   Dividers: #d0d0d0 (light grey)
+   Border: #e0e0e0 (very light grey)
+   Abstract BG: #f9f9f9 (very light grey)
+
+   Button Green: #8aa886 (soft sage green) - for paper link buttons
+   Button Green Hover: #6b9468 (medium green)
+*/
+
+/* ===================================
+   BASE LAYOUT
+   =================================== */
+
+.titlebar {
+  background-color: #ffe8d4;
+  min-height: 70px;
+  color: #222222;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.title {
+  display: inline-block !important;
+  margin-left: 30px;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: -0.1rem;
+  color: #000000;
+}
+
+.titlebar h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  width: 90%;
+  padding: 20px 20px 40px;
+}
+
+.back-btn {
+  padding-bottom: 10px;
+}
+
+.back-btn a {
+  color: #1EAEDB;
+  font-size: 2rem;
+  transition: color 0.2s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back-btn a:hover {
+  color: #0FA0CE;
+}
+
+/* Global styles */
+body {
+  background-color: #fafbfa;
+  color: #222222;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===================================
+   TYPOGRAPHY
+   =================================== */
+
+.content-title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  padding-top: 5rem;
+  color: #222222;
+  letter-spacing: -0.05rem;
+  border-top: 1px solid #d0d0d0;
+}
+
+.content-title:first-child {
+  margin-top: 0;
+  padding-top: 0;
+  border-top: none;
+}
+
+.list-item-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem;
+}
+
+.list-item-content {
+  font-size: 1.35rem;
+  font-weight: 300;
+  line-height: 1.7;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.list-item-content p {
+  font-weight: 300;
+}
+
+.small-text {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* ===================================
+   LISTS
+   =================================== */
+
+/* Top-level list items */
+.content > ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.content > ul > li {
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+
+/* Nested lists */
+.content ul ul {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  list-style-type: disc;
+}
+
+.content ul ul li {
+  margin-bottom: 1.2rem;
+  line-height: 1.7;
+}
+
+/* Custom bullet styling */
+.content ul ul li::marker {
+  color: #1EAEDB;
+}
+
+/* ===================================
+   NAVIGATION
+   =================================== */
+
+.sidebar-nav {
+  display: none;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  margin-bottom: 0.5rem;
+}
+
+.nav-links a {
+  color: #818181;
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  font-weight: 400;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #1EAEDB;
+  background: rgba(30, 174, 219, 0.1);
+}
+
+.nav-footer {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid #d0d0d0;
+}
+
+.nav-footer-links {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-footer-links a {
+  color: #818181;
+  text-decoration: none;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  border-radius: 3px;
+  font-size: 1.8rem;
+}
+
+.nav-footer-links a:hover {
+  color: #1EAEDB;
+  background: rgba(30, 174, 219, 0.1);
+}
+
+.hamburger-menu {
+  display: none;
+  position: fixed;
+  top: 13px;
+  right: 30px;
+  z-index: 1001;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  width: 44px;
+  height: 44px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: #1EAEDB;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.hamburger-menu:hover span {
+  background: #0FA0CE;
+}
+
+/* Hamburger animation when active */
+.hamburger-menu.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* ===================================
+   LINK STYLING
+   =================================== */
+
+a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ===================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   =================================== */
+
+/* Mobile Small (<400px) */
+@media (max-width: 399px) {
   .title {
-    display: inline-block !important;
-    margin-left: 30px;
-  }
-
-  .titlebar h3 {
-    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 2.4rem;
   }
 
   .content {
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 95%;
+    padding: 15px 15px 30px;
+  }
+
+  .titlebar {
+    min-height: 60px;
+  }
+}
+
+/* Mobile Large (400px-549px) */
+@media (min-width: 400px) {
+  .content {
+    width: 90%;
+  }
+}
+
+/* Tablet (550px-749px) */
+@media (min-width: 550px) {
+  .content {
+    width: 85%;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+}
+
+/* Desktop Small (750px-999px) - Sidebar appears */
+@media (min-width: 750px) {
+  .sidebar-nav {
+    display: block;
+    position: fixed;
+    left: 5%;
+    top: 150px;
+    width: 200px;
+    z-index: 100;
+  }
+
+  .content {
+    margin-left: calc(5% + 220px);
+    margin-right: 5%;
+    width: auto;
+    max-width: 700px;
+  }
+
+  .hamburger-menu {
+    display: none !important;
+  }
+}
+
+/* Desktop Large (1000px+) */
+@media (min-width: 1000px) {
+  .content {
     width: 60%;
-    padding-top: 20px;
+    max-width: 960px;
+  }
+}
+
+/* Large Desktop (1200px+) */
+@media (min-width: 1200px) {
+  .sidebar-nav {
+    left: calc(50% - 480px - 220px);
   }
 
-  .list-item-content {
-    margin-left: 20px;
-    margin-top: 20px;
+  .content {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile Navigation (<750px) */
+@media (max-width: 749px) {
+  .hamburger-menu {
+    display: block;
   }
 
-  .back-btn {
-    padding-bottom: 10px;
+  .sidebar-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100vh;
+    width: 80%;
+    max-width: 300px;
+    background: #FFFFFF;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding: 80px 20px 20px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
   }
 
-  .small-text {
-    font-size: smaller;
+  .sidebar-nav .nav-links a {
+    color: #222222;
   }
+
+  .sidebar-nav .nav-links a:hover,
+  .sidebar-nav .nav-links a.active {
+    color: #1EAEDB;
+    background: rgba(30, 174, 219, 0.1);
+  }
+
+  .sidebar-nav.active {
+    left: 0;
+  }
+
+  .nav-links a {
+    font-size: 1.8rem;
+    padding: 1.2rem 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-footer-links a {
+    font-size: 2rem;
+  }
+}
+
+/* Standard scrolling (smooth scroll removed for better UX) */
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.footer {
+  background-color: #ffe8d4;
+  padding: 3rem 2rem;
+  margin-top: 6rem;
+  text-align: center;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.08);
+  border-top: 1px solid #d0d0d0;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #222222;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 0.8rem 1.2rem;
+  border-radius: 3px;
+}
+
+.footer-links a:hover {
+  color: #1EAEDB;
+  background: rgba(30, 174, 219, 0.1);
+  text-decoration: none;
+}
+
+.footer-links a i {
+  margin-right: 0.5rem;
+}
+
+/* ===================================
+   RESEARCH PAPER LINKS
+   =================================== */
+
+.paper-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.paper-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: transparent;
+  color: #1EAEDB !important;
+  border-radius: 3px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.paper-link:hover {
+  background: rgba(30, 174, 219, 0.1);
+  text-decoration: none;
+  color: #0FA0CE !important;
+}
+
+.paper-link i {
+  font-size: 1.4rem;
+}
+
+/* ===================================
+   PROJECTS
+   =================================== */
+
+.project-list li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1EAEDB;
+}
+
+.project-tech {
+  font-size: 1.25rem;
+  color: #666666;
+  font-style: italic;
+  margin-left: 0.5rem;
+}
+
+/* ===================================
+   COURSEWORK
+   =================================== */
+
+.coursework-section {
+  margin-top: 2rem;
+}
+
+.coursework-header {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.coursework-header:first-child {
+  margin-top: 0;
+}
+
+.coursework-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.8rem 3rem;
+  list-style: none;
+  margin-left: 0;
+  position: relative;
+}
+
+.coursework-list::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  bottom: 5%;
+  width: 1px;
+  background: #d0d0d0;
+  transform: translateX(-50%);
+}
+
+.coursework-list li {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.coursework-list li a {
+  color: #1EAEDB;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.coursework-list li a:hover {
+  color: #0FA0CE;
+  text-decoration: underline;
+}
+
+/* ===================================
+   ABOUT SECTION
+   =================================== */
+
+.content > p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #333333;
+}
+
+/* ===================================
+   EDUCATION SECTION
+   =================================== */
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.education-grid::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background: #d0d0d0;
+  transform: translateX(-50%);
+}
+
+.education-item h5 {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333333;
+}
+
+.education-item p {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-bottom: 0.3rem;
+  color: #555555;
+}
+
+.education-date {
+  font-style: italic;
+  color: #666666;
+  font-size: 1.3rem;
+}
+
+.education-thesis {
+  font-size: 1.3rem;
+  color: #555555;
+  margin-top: 0.5rem;
+}
+
+.education-thesis a {
+  color: #1EAEDB;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.education-thesis a:hover {
+  color: #0FA0CE;
+  text-decoration: underline;
+}
+
+.education-thesis i {
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+}
+
+/* ===================================
+   RESEARCH PAPERS SECTION
+   =================================== */
+
+.research-papers {
+  margin-top: 2rem;
+}
+
+.paper {
+  margin-bottom: 5rem;
+}
+
+.paper-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.8rem;
+  color: #333333;
+}
+
+.paper-authors {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #555555;
+  margin-bottom: 0.5rem;
+}
+
+.paper-venue {
+  font-size: 1.3rem;
+  color: #666666;
+  margin-bottom: 1.5rem;
+}
+
+.paper-abstract {
+  margin-top: 2rem;
+  background: #FFFFFF;
+  padding: 2rem;
+  border-radius: 2px;
+  border: 1px solid #e0e0e0;
+}
+
+.paper-abstract p {
+  margin: 0;
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+
+/* ===================================
+   PROJECTS GRID
+   =================================== */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 3rem;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.projects-grid::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 5%;
+  bottom: 5%;
+  width: 1px;
+  background: #d0d0d0;
+  transform: translateX(-50%);
+}
+
+.project-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.project-name {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #1EAEDB;
+  flex: 1;
+  min-width: 0;
+}
+
+.project-item .project-tech {
+  font-size: 1.2rem;
+  color: #666666;
+  font-style: italic;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Media query adjustments for smaller screens */
+@media (max-width: 550px) {
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+
+  .paper-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .paper-link {
+    justify-content: center;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .education-grid::before {
+    display: none;
+  }
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .projects-grid::before {
+    display: none;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .project-item .project-tech {
+    white-space: normal;
+  }
+
+  .coursework-list {
+    grid-template-columns: 1fr;
+    gap: 0.6rem;
+  }
+
+  .coursework-list::before {
+    display: none;
+  }
+}
