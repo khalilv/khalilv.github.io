@@ -363,9 +363,17 @@ a:hover {
   .nav-footer-links a {
     font-size: 2rem;
   }
-}
 
-/* Standard scrolling (smooth scroll removed for better UX) */
+  .footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 1.8rem;
+    width: 100%;
+  }
+}
 
 /* ===================================
    FOOTER
@@ -408,66 +416,6 @@ a:hover {
   margin-right: 0.5rem;
 }
 
-/* ===================================
-   SPECIAL CONTAINERS
-   =================================== */
-
-.paper-links {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 0.8rem;
-  margin-bottom: 0.5rem;
-}
-
-.paper-links a {
-  font-size: 1.4rem;
-}
-
-/* ===================================
-   RESPONSIVE MEDIA QUERIES
-   =================================== */
-
-/* Mobile Small (<550px) */
-@media (max-width: 550px) {
-  .footer-links {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .footer-links a {
-    font-size: 1.8rem;
-    width: 100%;
-  }
-
-  .paper-links {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 0.8rem;
-  }
-
-  .grid-2col {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-  .grid-divider::before {
-    display: none;
-  }
-
-  .flex-between {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .flex-between > a {
-    max-width: 100%;
-  }
-
-  .flex-between > span {
-    white-space: normal;
-  }
-}
 
 /* ===================================
    GENERIC UTILITY CLASSES
@@ -580,24 +528,6 @@ a:hover {
 }
 
 /* Layout Utilities */
-.flex-between {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 1rem;
-}
-
-.flex-between > a {
-  flex: 1;
-  min-width: 0;
-  max-width: 50%;
-}
-
-.flex-between > span {
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-
 .grid-2col {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -623,6 +553,18 @@ a:hover {
   transform: translateX(-50%);
 }
 
+/* Mobile grid layout (< 650px) */
+@media (max-width: 649px) {
+  .grid-2col {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem;
+  }
+
+  .grid-divider::before {
+    display: none !important;
+  }
+}
+
 /* Container Utilities */
 .card {
   background: #FFFFFF;
@@ -634,4 +576,25 @@ a:hover {
 
 .paper-container {
   margin-bottom: 5rem;
+}
+
+.paper-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.paper-links a {
+  font-size: 1.4rem;
+}
+
+/* Mobile paper links (< 550px) */
+@media (max-width: 550px) {
+  .paper-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.8rem;
+  }
 }
