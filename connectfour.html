@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | Connect Four</title>
+    <title>Khalil Virji</title>
     <meta name="description" content="A one-player Connect Four game I made using Java Object Oriented Programming">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,45 +19,36 @@
 
 <body>
     <div class="titlebar">
-        <h3 class="title">Khalil Virji</h3>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h3 class="title">Khalil Virji</h3>
+        </a>
     </div>
 
     <div class="content">
         <div class="back-btn">
             <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         </div>
-        <h4 class="content-title">Connect Four</h4>
-        <ul>
-            <li>
-                <b><span class="list-item-title">Demo</span></b>
-                <div class="list-item-content">
-                    <video autoplay muted loop width="100%">
-                        <source src="./videos/connect-four-demo.mp4" type="video/mp4">
-                    </video>
-
-                </div>
+        <h4 class="content-title" style="border-top: none; padding-top: 0;">Connect Four</h4>
+        <div class="paper-links">
+            <a href="https://github.com/khalilv/Connect_four-" target="_blank" class="link-primary"><i class="fab fa-github"></i> Github</a>
+        </div>
+        <ul class="content-list">
+            <li class="item-spacing">
+                <b><span class="text-lg">Demo</span></b>
+                <video autoplay muted loop width="100%">
+                    <source src="./videos/connect-four-demo.mp4" type="video/mp4">
+                </video>
             </li>
-            <li>
-                <b><span class="list-item-title">Source</span></b>
-                <ul>
-                    <li>
-                        <a href="https://github.com/khalilv/Connect_four-"
-                            target="_blank">github.com/khalilv/Connect_four-</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <b><span class="list-item-title">Details</span></b>
-                <div class="list-item-content">
-                    <p>I made this game for a course project during my second semester at McGill. It is a simple
+            <li class="item-spacing">
+                <b><span class="text-lg">Details</span></b>
+                <p class="text-base">I made this game for a course project during my second semester at McGill. It is a simple
                         connect-four game played via the command line against a CPU. I made it in Java using OOP. A cool
                         feature about this game is that the CPU checks two moves ahead to see if it has a winning
                         sequence, otherwise, its move is a deterministic function based on the previous move. This
                         feature made the game surprisingly difficult to beat on the first few attempts, and it was a
                         weird feeling struggling to beat a game that I created.
-                    </p>
-                    <img src="./images/connect-four.PNG" width="35%">
-                </div>
+                </p>
+                <img src="./images/connect-four.PNG" width="35%">
             </li>
         </ul>
     </div>

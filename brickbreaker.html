@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | Brick Breaker</title>
+    <title>Khalil Virji</title>
     <meta name="description" content="A Brick Breaker game I made using JavaScript, HTML and CSS">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,35 +26,28 @@
 
 <body>
     <div class="titlebar">
-        <h3 class="title">Khalil Virji</h3>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h3 class="title">Khalil Virji</h3>
+        </a>
     </div>
     <div class="content">
         <div class="back-btn">
             <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         </div>
-        <h4 class="content-title">Brick Breaker</h4>
-        <ul>
-            <li>
-                <b><span class="list-item-title">Demo</span></b>
-                <div class="list-item-content">
-                    <img id="brickImage" style="display: none;" src="./images/brick.jpg">
-                    <canvas id="brickBreakerCanvas" width="800" height="500"></canvas>
-                    <script src="./js/blockbreaker.js">  </script>
-                </div>
+        <h4 class="content-title" style="border-top: none; padding-top: 0;">Brick Breaker</h4>
+        <div class="paper-links">
+            <a href="https://github.com/khalilv/brickBreaker" target="_blank" class="link-primary"><i class="fab fa-github"></i> Github</a>
+        </div>
+        <ul class="content-list">
+            <li class="item-spacing">
+                <b><span class="text-lg">Demo</span></b>
+                <img id="brickImage" style="display: none;" src="./images/brick.jpg">
+                <canvas id="brickBreakerCanvas" width="800" height="500"></canvas>
+                <script src="./js/blockbreaker.js">  </script>
             </li>
-            <li>
-                <b><span class="list-item-title">Source</span></b>
-                <ul>
-                    <li>
-                        <a href="https://github.com/khalilv/brickBreaker"
-                            target="_blank">github.com/khalilv/brickBreaker</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <b><span class="list-item-title">Details</span></b>
-                <div class="list-item-content">
-                    <p>
+            <li class="item-spacing">
+                <b><span class="text-lg">Details</span></b>
+                <p class="text-base">
                         I made this game in the summer of 2019, between my first and second years of undergrad. It was
                         my first introduction to JavaScript, HTML, and CSS. It is based on some great online
                         tutorials: <a href="https://www.youtube.com/watch?v=3EMxBkqC4z0" target="_blank">Intro to Game
@@ -68,8 +61,7 @@
                         level variations with increasing difficulty, and improved ball rebounding off the bricks. I also
                         added custom styling elements. The whole project took me just over a week to complete. It was a
                         great learning experience to understand how JavaScript, HTML, and CSS work together.
-                    </p>
-                </div>
+                </p>
             </li>
         </ul>
     </div>

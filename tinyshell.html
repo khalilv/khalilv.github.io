@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | Tiny Shell</title>
+    <title>Khalil Virji</title>
     <meta name="description" content="A mock shell implemented in C">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -20,45 +20,38 @@
 
 <body>
     <div class="titlebar">
-        <h3 class="title">Khalil Virji</h3>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h3 class="title">Khalil Virji</h3>
+        </a>
     </div>
 
     <div class="content">
         <div class="back-btn">
             <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         </div>
-        <h4 class="content-title">Tiny Shell</h4>
-        <ul>
-            <li>
-                <b><span class="list-item-title">Demo</span></b>
-                <div class="list-item-content">
-                    <video autoplay muted loop width="100%">
-                        <source src="./videos/tiny-shell-demo.mp4" type="video/mp4">
-                    </video>
-
-                </div>
+        <h4 class="content-title" style="border-top: none; padding-top: 0;">Tiny Shell</h4>
+        <div class="paper-links">
+            <a href="https://github.com/khalilv/tinyShell" target="_blank" class="link-primary"><i class="fab fa-github"></i> Github</a>
+        </div>
+        <ul class="content-list">
+            <li class="item-spacing">
+                <b><span class="text-lg">Demo</span></b>
+                <video autoplay muted loop width="100%">
+                    <source src="./videos/tiny-shell-demo.mp4" type="video/mp4">
+                </video>
             </li>
-            <li>
-                <b><span class="list-item-title">Source</span></b>
-                <ul>
-                    <li>
-                        <a href="https://github.com/khalilv/tinyShell" target="_blank">github.com/khalilv/tinyShell</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <b><span class="list-item-title">Details</span></b>
-                <div class="list-item-content">
-                    <p>This was a project for an operating systems course I took during my third year at McGill. It is a
+            <li class="item-spacing">
+                <b><span class="text-lg">Details</span></b>
+                <p class="text-base">This was a project for an operating systems course I took during my third year at McGill. It is a
                         mock shell implemented in C. You can input commands directly into this program and the shell
                         will execute them. You can pass a file into the program and the shell will run all the commands
                         in the file and then terminate. You can also add a FIFO as an input and the shell will run FIFO
                         mode. This will use the named pipe to execute commands.
-                    </p>
-                    <p>
-                        For internal commands, the shell can accept four.
-                    </p>
-                    <ul>
+                </p>
+                <p class="text-base">
+                    For internal commands, the shell can accept four:
+                </p>
+                <ul class="nested-list">
                         <li><code>history</code>: shows up to the last
                             100 commands executed</li>
                         <li><code>chdir</code>: changes the working directory. Works with absolute and relative paths.
@@ -67,10 +60,10 @@
                         <li><code>checklim</code>: displays the current hard and soft limits of <code>RLIM_DATA</code>.
                         </li>
                     </ul>
-                    <p>
-                        For signal handling, the shell can handle two cases.
-                    </p>
-                    <ul>
+                <p class="text-base">
+                    For signal handling, the shell can handle two cases:
+                </p>
+                <ul class="nested-list">
                         <li><code>CTRL^C</code>: the shell will display a message asking the
                             user if they would like to terminate the program. If yes, the shell will terminate. If no,
                             the
@@ -79,12 +72,11 @@
                         <li><code>CTRL^Z</code>: the shell will ignore this command and keep running.
                         </li>
                     </ul>
-                    <p>
-                        This project was a great experience for me to explore concepts of low-level programming such as
-                        memory allocation, processes and inter-process communication, threads, and signal handling. It
-                        was one of my more difficult assignments but insightful with a cool end product.
-                    </p>
-                </div>
+                <p class="text-base">
+                    This project was a great experience for me to explore concepts of low-level programming such as
+                    memory allocation, processes and inter-process communication, threads, and signal handling. It
+                    was one of my more difficult assignments but insightful with a cool end product.
+                </p>
             </li>
         </ul>
     </div>

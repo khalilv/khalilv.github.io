@@ -84,14 +84,18 @@ body {
 /* Mobile body padding */
 @media (max-width: 549px) {
   body {
-    padding-left: 15px;
+    padding-left: 10px;
     padding-right: 20px;
   }
 
   .titlebar {
-    margin-left: -15px;
+    margin-left: -10px;
     margin-right: -20px;
-    width: calc(100% + 35px);
+    width: calc(100% + 30px);
+  }
+
+  .paper-container .card {
+    display: none;
   }
 }
 
