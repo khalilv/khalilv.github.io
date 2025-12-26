@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Khalil Virji</title>
-    <meta name="description" content="A one-player Connect Four game I made using Java Object Oriented Programming">
+    <meta name="description" content="A Connect Four game.">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -15,6 +15,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <script>
+        // Set playbackRate for all <video> elements to 2x after DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            var videos = document.querySelectorAll('video');
+            videos.forEach(function (video) {
+                video.playbackRate = 2.0;
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -30,7 +39,8 @@
         </div>
         <h4 class="content-title" style="border-top: none; padding-top: 0;">Connect Four</h4>
         <div class="paper-links">
-            <a href="https://github.com/khalilv/Connect_four-" target="_blank" class="link-primary"><i class="fab fa-github"></i> Github</a>
+            <a href="https://github.com/khalilv/Connect_four-" target="_blank" class="link-primary"><i
+                    class="fab fa-github"></i> Github</a>
         </div>
         <ul class="content-list">
             <li class="item-spacing">
@@ -41,12 +51,12 @@
             </li>
             <li class="item-spacing">
                 <b><span class="text-lg">Details</span></b>
-                <p class="text-base">I made this game for a course project during my second semester at McGill. It is a simple
-                        connect-four game played via the command line against a CPU. I made it in Java using OOP. A cool
-                        feature about this game is that the CPU checks two moves ahead to see if it has a winning
-                        sequence, otherwise, its move is a deterministic function based on the previous move. This
-                        feature made the game surprisingly difficult to beat on the first few attempts, and it was a
-                        weird feeling struggling to beat a game that I created.
+                <p class="text-base">I made this game for a course project during my second semester at McGill. It is a
+                    simple Connect Four game written in Java and played via the command line against a CPU. A cool
+                    feature of this game is that the CPU checks two moves ahead to see if it has a winning sequence;
+                    otherwise, its move is a deterministic function based on the previous move. This feature made the
+                    game surprisingly difficult to beat on the first few attempts, and it was an interesting feeling to
+                    struggle to beat a game I created.
                 </p>
                 <img src="./images/connect-four.PNG" width="35%">
             </li>

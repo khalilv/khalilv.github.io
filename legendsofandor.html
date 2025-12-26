@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8">
     <title>Khalil Virji</title>
-    <meta name="description" content="A multiplayer turn-based board game for Android devices">
+    <meta name="description" content="A multiplayer turn-based board game for Android devices.">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -16,6 +16,15 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <script>
+        // Set playbackRate for all <video> elements to 2x after DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            var videos = document.querySelectorAll('video');
+            videos.forEach(function (video) {
+                video.playbackRate = 2.5;
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -31,7 +40,8 @@
         </div>
         <h4 class="content-title" style="border-top: none; padding-top: 0;">Legends of Andor</h4>
         <div class="paper-links">
-            <a href="https://github.com/khalilv/LegendsOfAndor" target="_blank" class="link-primary"><i class="fab fa-github"></i> Github</a>
+            <a href="https://github.com/khalilv/LegendsOfAndor" target="_blank" class="link-primary"><i
+                    class="fab fa-github"></i> Github</a>
         </div>
         <ul class="content-list">
             <li class="item-spacing">
@@ -42,62 +52,62 @@
             </li>
             <li class="item-spacing">
                 <b><span class="text-lg">Details</span></b>
-                <p class="text-base">This was a course project I completed with five others during my third year at McGill. We were
-                        instructed to implement a digital version of the board game
-                        <a href="http://legendsofandor.com/" target="_blank">Legends of Andor</a> on a platform of our
-                        choosing. We chose to implement it for Android devices, using Android Studio, SpringBoot, and
-                        IntelliJ.
+                <p class="text-base">This was a course project I completed with five others during my third year at
+                    McGill. We were
+                    instructed to implement a digital version of the board game
+                    <a href="http://legendsofandor.com/" target="_blank">Legends of Andor</a> on a platform of our
+                    choosing. We chose to implement it on Android devices using Android Studio, Spring Boot, and
+                    IntelliJ.
                 </p>
                 <p class="text-base">
                     The acceptance criteria for the game were:
                 </p>
                 <ul class="nested-list">
-                        <li>
-                            All core features of the game must be present including free actions, player movement,
-                            monster fights, farmers, witches, princes, and runestones.
-                        </li>
-                        <li>
-                            The game must be playable from start to finish without any crashes, errors, or unexpected
-                            behavior.
-                        </li>
-                        <li>
-                            There must be a login/logout functionality for players.
-                        </li>
-                        <li>
-                            The game must have the ability to save/load games.
-                        </li>
-                    </ul>
+                    <li>
+                        All core features of the game must be present, including free actions, player movement,
+                        monster fights, farmers, witches, princes, and runestones.
+                    </li>
+                    <li>
+                        The game must be playable from start to finish without any crashes, errors, or unexpected
+                        behavior.
+                    </li>
+                    <li>
+                        There must be a login/logout functionality for players.
+                    </li>
+                    <li>
+                        The game must have the ability to save/load games.
+                    </li>
+                </ul>
                 <p class="text-base">
-                    We used a client-server architecture to develop this game using SpringBoot for the server, and
-                        Android Studio for the client. It was the largest scale project I completed during my undergrad
-                        and it took us two semesters to complete. We used object-oriented programming principles and
-                        leveraged several design patterns including the Singleton, Flyweight, and Observer. We worked
-                        with threads, client, and server validation, and <a
-                            href="https://spring.io/guides/tutorials/rest/" target="_blank">Spring REST services</a>. We
-                        implemented additional features such as a chat room, a character details page, how-to-play
-                        pages, and a live
-                        waiting room where players can view the status of other players before the game begins. We also
-                        took the time to design a nice UI to make the game more enjoyable to play.
+                    We used a client-server architecture to develop this game using SpringBoot for the server and
+                    Android Studio for the client. It was the largest-scale project I completed during my undergrad
+                    and it took us two semesters to complete. We used object-oriented programming principles and
+                    implemented several design patterns, including the Singleton, Flyweight, and Observer. We worked
+                    with threads, client and server validation, and <a href="https://spring.io/guides/tutorials/rest/"
+                        target="_blank">Spring REST services</a>. We also implemented additional features, including an
+                    in-game chat room, a character details page, how-to-play pages, and a live waiting room where
+                    players can view other players' status before the game begins. We also took the time to design a
+                    nice UI to make the game more enjoyable to play.
                 </p>
             </li>
             <li class="item-spacing">
                 <b><span class="text-lg">Media</span></b>
-                    <video autoplay muted loop width="100%">
-                        <source src="./videos/loa-falcon-trade.mp4" type="video/mp4">
-                    </video>
-                    <div class="row">
-                        <div class="columns six">
-                            <img src="./images/loa_fight.PNG" width="100%">
-                        </div>
-                        <div class="columns six">
-                            <img src="./images/loa_character.PNG" width="100%">
-                        </div>
+                <video autoplay muted loop width="100%">
+                    <source src="./videos/loa-falcon-trade.mp4" type="video/mp4">
+                </video>
+                <div class="row">
+                    <div class="columns six">
+                        <img src="./images/loa_fight.PNG" width="100%">
                     </div>
-                    <div class="row">
-                        <div class="columns six">
-                            <img src="./images/loa_merchant.PNG" width="100%">
-                        </div>
+                    <div class="columns six">
+                        <img src="./images/loa_character.PNG" width="100%">
                     </div>
+                </div>
+                <div class="row">
+                    <div class="columns six">
+                        <img src="./images/loa_merchant.PNG" width="100%">
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
