@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | COMP 579</title>
-    <meta name="description" content="A course I took on reinforcement learning">
+    <title>Khalil Virji</title>
+    <meta name="description" content="Reinforcement Learning">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -20,20 +20,21 @@
 
 <body>
     <div class="titlebar">
-        <h3 class="title">Khalil Virji</h3>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h3 class="title">Khalil Virji</h3>
+        </a>
     </div>
 
     <div class="content">
         <div class="back-btn">
             <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         </div>
-        <h4 class="content-title">COMP 579 - Reinforcement Learning</h4>
-        <ul>
-            <li>
-                This was a Reinforcement Learning course that I took with Professor Doina Precup during my Masters at
-                McGill. Some
-                of the topics we covered are listed below.
-                <ul>
+        <h4 class="content-title" style="border-top: none; padding-top: 0;">COMP 579 - Reinforcement Learning</h4>
+        <ul class="content-list">
+            <li class="item-spacing">
+                A reinforcement learning (RL) course that I took with Professor Doina Precup during my Masters at
+                McGill. Topics included:
+                <ul class="nested-list">
                     <li>
                         <b>Bandits</b> - <i>Multi-arm bandits, exploration vs exploitation, action-value methods,
                             epsilon-greedy action selection, UCB action selection,
@@ -81,10 +82,10 @@
                     </li>
                 </ul>
             </li>
-            <li>We also had three assignments and one project throughout the course.
-                <ol>
+            <li class="item-spacing">We had three assignments and one final project.
+                <ol class="nested-list">
                     <li>
-                        <b>Bandit Algorithms</b> - <i>Explored the UCB, Thompson sampling, and epsilon greedy algorithms
+                        <b>Bandit Algorithms</b> - <i>Explored UCB, Thompson sampling, and epsilon greedy algorithms
                             on a k-armed Bernoulli bandit problem</i>
                     </li>
                     <li>
@@ -97,13 +98,18 @@
                             policy from collected data</i>
                     </li>
                     <li>
-                        <b>Project</b> - <i>For our project, we investigated <a href="https://arxiv.org/abs/1703.02702" target="_blank">Robust Adversarial Reinforcement Learning (RARL)</a> to have an
-                            agent learn a policy robust to distribution shifts between training and testing environments. We built on the methodology in the paper using
-                            a recent state-of-the-art learning method (<a href="https://proceedings.mlr.press/v80/fujimoto18a.html" target="_blank">TD3</a>) and expanding the testing environments. Overall, we observed similar behavior and
-                            results as produced in the original paper, highlighting the effectiveness of this approach. The full project report can be found <a href="./assets/RARL.pdf" target="_blank">here.</a></i>
+                        <b>Project</b> - <i>For our project, we implemented <a href="https://arxiv.org/abs/1703.02702"
+                                target="_blank">Robust Adversarial Reinforcement Learning (RARL)</a> to enable an agent
+                            to learn a policy robust to distribution shifts between the training and testing
+                            environments. We built on the methodology in the paper by using
+                            <a href="https://proceedings.mlr.press/v80/fujimoto18a.html" target="_blank">TD3</a>,
+                            demonstrating that the RARL approach is method-agnotistic, and by expanding the
+                            test scenario set.
+                            Overall, we observed behavior similar to that shown in the original paper, highlighting the
+                            effectiveness of RARL. The full project report can be found <a href="./assets/RARL.pdf"
+                                target="_blank">here.</a></i>
                     </li>
                 </ol>
-
             </li>
         </ul>
     </div>

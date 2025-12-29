@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | COMP 424</title>
-    <meta name="description" content="A course I took on artificial intelligence">
+    <title>Khalil Virji</title>
+    <meta name="description" content="Artificial Intelligence">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -16,23 +16,33 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <script>
+        // Set playbackRate for all <video> elements to 2x after DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            var videos = document.querySelectorAll('video');
+            videos.forEach(function (video) {
+                video.playbackRate = 2.0;
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class="titlebar">
-        <h3 class="title">Khalil Virji</h3>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h3 class="title">Khalil Virji</h3>
+        </a>
     </div>
 
     <div class="content">
         <div class="back-btn">
             <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         </div>
-        <h4 class="content-title">COMP 424 - Artificial Intelligence</h4>
-        <ul>
-            <li>
-                This was an Artificial Intelligence course that I took during my fifth year at McGill. Some of the
-                topics we covered are listed below.
-                <ul>
+        <h4 class="content-title" style="border-top: none; padding-top: 0;">COMP 424 - Artificial Intelligence</h4>
+        <ul class="content-list">
+            <li class="item-spacing">
+                An artificial intelligence (AI) course that I took during my fifth year at McGill. Topics included:
+                <ul class="nested-list">
                     <li>
                         <b>Uninformed Search</b> - <i>state space graph, search tree, BFS, DFS, uniform-cost search,
                             depth-limited search, iterative deepening search
@@ -97,10 +107,9 @@
                     </li>
                 </ul>
             </li>
-            <li>We had four written assignments throughout the course which were focused on class material. For our
-                final project, we were required to build an intelligent agent for the board game <b>Colosseum
-                    Survival</b>. The project was done in pairs and my partner and I implemented our agent using
-                Monte-Carlo Tree Search equipped with domain-specific heuristics.
+            <li class="item-spacing">For the final project, we built an agent for the board game <b>Colosseum
+                    Survival</b>. The project was done in pairs and my partner and I implemented ours using
+                Monte-Carlo Tree Search equipped with some domain-specific heuristics.
                 The project code and report
                 can be found <a href="https://github.com/khalilv/popcoin" target="_blank">here</a> and a demo of our
                 agent beating a random agent is shown below.

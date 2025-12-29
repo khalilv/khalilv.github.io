@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | COMP 558</title>
-    <meta name="description" content="A course I took on computer vision">
+    <title>Khalil Virji</title>
+    <meta name="description" content="Fundamentals of Computer Vision">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -20,18 +20,20 @@
 
 <body>
     <div class="titlebar">
-        <h3 class="title">Khalil Virji</h3>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h3 class="title">Khalil Virji</h3>
+        </a>
     </div>
 
     <div class="content">
         <div class="back-btn">
             <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         </div>
-        <h4 class="content-title">COMP 558 - Fundamentals of Computer Vision</h4>
-        <ul>
-            <li>
-                This was a Computer Vision course that I took during my fifth year at McGill. Some of the topics we covered are listed below.
-                <ul>
+        <h4 class="content-title" style="border-top: none; padding-top: 0;">COMP 558 - Fundamentals of Computer Vision</h4>
+        <ul class="content-list">
+            <li class="item-spacing">
+                A computer vision course that I took during my fifth year at McGill. Topics included:
+                <ul class="nested-list">
                     <li>
                         <b>Image Filtering</b> - <i>local averaging, local difference, gaussian smoothing, convolution,
                             cross correlation, image gradient
@@ -83,11 +85,10 @@
                     </li>
                 </ul>
             </li>
-            <li>We also had four assignments throughout the course.
-                <ol>
+            <li class="item-spacing">We had four assignments throughout the course.
+                <ol class="nested-list">
                     <li>
-                        <b>Edge detection using oriented operators</b> - <i>implemented our own edge detector using
-                            techniques seen in class. Results from my submission are shown below (left is original
+                        <b>Edge detection using oriented operators</b> - <i>implemented our own edge detector. Results from my submission are below (left is the original
                             image).</i>
                             <div class="list-item-content">
                                 <div class="row">
@@ -101,8 +102,8 @@
                             </div>
                     </li>
                     <li>
-                        <b>Line finding using RANSAC</b> - <i>implemented the RANSAC algorithm to detect prominent lines in
-                        an image. Results from my submission are shown below.</i>
+                        <b>Line finding using RANSAC</b> - <i>implemented RANSAC to detect prominent lines in
+                        an image. Results from my submission are below.</i>
                         <div class="list-item-content">
                             <div class="row">
                                 <div class="columns">
@@ -112,7 +113,7 @@
                         </div>
                     </li>
                     <li>
-                        <b>Lucas-Kanade Image Registration</b> - <i>estimate motion fields given a sequence of images. Results of my submission are shown below.</i>
+                        <b>Lucas-Kanade Image Registration</b> - <i>estimate motion fields given a sequence of images. Results of my submission are below.</i>
                         <div class="list-item-content">
                             <div class="row">
                                 <div class="columns six">
@@ -125,7 +126,7 @@
                         </div>
                     </li>
                     <li>
-                        <b>Rotations and Translations</b> - <i>given an rgb image, a depth map, and the intrinsic parameters of a camera, simulate rotations and translations. Results from my submission are shown below.</i>
+                        <b>Rotations and Translations</b> - <i>given an rgb image, a depth map, and the intrinsic parameters of a camera, simulate rotations and translations. Results from my submission are below.</i>
                         <div class="list-item-content">
                             <div class="row">
                                 <div class="columns four">
@@ -141,7 +142,7 @@
                         </div>
                     </li>
                     <li>
-                        <b>Stereo</b> - <i>given stereo pairs, estimate the fundamental matrix, rectify the images, and estimate the relative depth of objects in the scene. Results from my submission are shown below. The first row contains the original images with their epipolar lines. The second row contains the rectified images with their epipolar lines. The third row contains the relative depth of some objects in the scene.</i>
+                        <b>Stereo</b> - <i>given stereo pairs, estimate the fundamental matrix, rectify the images, and estimate the relative depth of objects in the scene. Results from my submission are below. The first row contains the original images with their epipolar lines. The second row contains the rectified images with their epipolar lines. The third row contains the relative depth of some objects in the scene.</i>
                         <div class="list-item-content">
                             <div class="row">
                                 <div class="columns">

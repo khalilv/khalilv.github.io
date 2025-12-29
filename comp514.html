@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Khalil Virji | COMP 514</title>
-    <meta name="description" content="A course I took on applied robotics">
+    <title>Khalil Virji</title>
+    <meta name="description" content="Applied Robotics">
     <meta name="author" content="Khalil Virji">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
@@ -16,24 +16,33 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" href="images/favicon-32x32.png">
+    <script>
+        // Set playbackRate for all <video> elements to 2x after DOM is ready
+        document.addEventListener('DOMContentLoaded', function () {
+            var videos = document.querySelectorAll('video');
+            videos.forEach(function (video) {
+                video.playbackRate = 2.5;
+            });
+        });
+    </script>
 </head>
 
 <body>
     <div class="titlebar">
-        <h3 class="title">Khalil Virji</h3>
+        <a href="./index.html" style="text-decoration: none; color: inherit;">
+            <h3 class="title">Khalil Virji</h3>
+        </a>
     </div>
 
     <div class="content">
         <div class="back-btn">
             <a href="./index.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
         </div>
-        <h4 class="content-title">COMP 514 - Applied Robotics</h4>
-        <ul>
-            <li>
-                This was an Applied Robotics course that I took during my Masters at
-                McGill. Some
-                of the topics we covered are listed below.
-                <ul>
+        <h4 class="content-title" style="border-top: none; padding-top: 0;">COMP 514 - Applied Robotics</h4>
+        <ul class="content-list">
+            <li class="item-spacing">
+                An applied robotics course that I took during my Masters at McGill. Topics included:
+                <ul class="nested-list">
                     <li>
                         <b>Rigid-body Pose</b> - <i>Configuration space, task space, translations, rotations, reference
                             frames, Euler angles, quaternions
@@ -103,8 +112,8 @@
                     </li>
                 </ul>
             </li>
-            <li>We also had eight assignments throughout the course. They were all based on <b>ROS1 in C++</b>
-                <ol>
+            <li class="item-spacing">We had eight assignments throughout the course. They were all written in <b>ROS1 in C++</b>
+                <ol class="nested-list">
                     <li>
                         <b>Husky Teleop Controller</b> - <i>Controlled the husky robot with keyboard commands</i>
                     </li>
