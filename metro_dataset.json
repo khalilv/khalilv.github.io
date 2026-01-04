@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "created": "2026-01-02",
+    "description": "Montreal Metro optimal car positions dataset extracted from PDF exit maps",
+    "version": "1.0",
+    "lines": {
+      "green": {
+        "train_cars": 9,
+        "color_hex": "#00A54F"
+      },
+      "orange": {
+        "train_cars": 9,
+        "color_hex": "#FF7900"
+      },
+      "blue": {
+        "train_cars": 6,
+        "color_hex": "#009DDC"
+      },
+      "yellow": {
+        "train_cars": 9,
+        "color_hex": "#FFD200"
+      }
+    }
+  },
+  "stations": [
+    {
+      "station": "Berri-UQAM",
+      "slug": "berri",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Yellow Line"},
+                {"car": 2, "note": "Côte-Vertu"},
+                {"car": 7},
+                {"car": 8, "note": "Mont-morency"}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Yellow Line"},
+                {"car": 2},
+                {"car": 6, "note": "Côte-Vertu"},
+                {"car": 7, "note": "Mont-morency"}
+              ]
+            }
+          ]
+        },
+        {
+          "line": "yellow",
+          "directions": [
+            {
+              "terminal": "Longueuil",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6, "note": "Exit + Angrignon + Orange Line"},
+                {"car": 4, "note": "Exit + Honoré Beaugrand + Orange Line"}
+              ]
+            },
+            {
+              "terminal": "Berri-UQAM",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3, "note": "Exit + Angrignon + Orange Line"},
+                {"car": 7, "note": "Exit + Honoré Beaugrand + Orange Line"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Jean-Drapeau",
+      "slug": "jean_drapeau",
+      "lines": [
+        {
+          "line": "yellow",
+          "directions": [
+            {
+              "terminal": "Longueuil",
+              "elevator_cars": [5],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 6},
+                {"car": 7}
+              ]
+            },
+            {
+              "terminal": "Berri-UQAM",
+              "elevator_cars": [5],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 6},
+                {"car": 7}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Longueuil",
+      "slug": "longueuil",
+      "lines": [
+        {
+          "line": "yellow",
+          "directions": [
+            {
+              "terminal": "Longueuil",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 5}
+              ]
+            },
+            {
+              "terminal": "Berri-UQAM",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 5},
+                {"car": 6}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Snowdon",
+      "slug": "snowdon",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 4},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1},
+                {"car": 3},
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Côte-des-Neiges",
+      "slug": "cote_des_neiges",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Université-de-Montréal",
+      "slug": "udm",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Édouard-Montpetit",
+      "slug": "edouard_montpetit",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Outremont",
+      "slug": "outremont",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Acadie",
+      "slug": "acadie",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Parc",
+      "slug": "parc",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "De Castelnau",
+      "slug": "de_castelnau",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Jean-Talon",
+      "slug": "jean_talon",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Montmorency"},
+                {"car": 6, "note": "Côte-Vertu"}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Côte-Vertu"},
+                {"car": 5, "note": "Montmorency"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Fabre",
+      "slug": "fabre",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Papineau"},
+                {"car": 6, "note": "Fabre"}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Fabre"},
+                {"car": 6, "note": "D'Iberville"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "D'Iberville",
+      "slug": "d_iberville",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "D'Iberville"},
+                {"car": 6, "note": "Louis-Hébert"}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Louis-Hébert"},
+                {"car": 6, "note": "D'Iberville"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Saint-Michel",
+      "slug": "saint_michel",
+      "lines": [
+        {
+          "line": "blue",
+          "directions": [
+            {
+              "terminal": "Saint-Michel",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 3}
+              ]
+            },
+            {
+              "terminal": "Snowdon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
