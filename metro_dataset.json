@@ -229,6 +229,99 @@
       ]
     },
     {
+      "station": "Guy-Concordia",
+      "slug": "guy_concordia",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Guy"},
+                {"car": 9, "note": "St Mathieu"}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "St Mathieu"},
+                {"car": 9, "note": "Guy"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Peel",
+      "slug": "peel",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 5},
+                {"car": 6},
+                {"car": 7}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 5},
+                {"car": 6}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "McGill",
+      "slug": "mcgill",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "La Baie/Union"},
+                {"car": 2, "note": "La Baie/Union"},
+                {"car": 3, "note": "La Baie/Union"},
+                {"car": 6, "note": "Eaton Center/McGill College"},
+                {"car": 8, "note": "Eaton Center/McGill College"},
+                {"car": 9, "note": "Eaton Center/McGill College"}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Eaton Center/McGill College"},
+                {"car": 2, "note": "Eaton Center/McGill College"},
+                {"car": 4, "note": "Eaton Center/McGill College"},
+                {"car": 7, "note": "La Baie/Union"},
+                {"car": 8, "note": "La Baie/Union"},
+                {"car": 9, "note": "La Baie/Union"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "station": "Berri-UQAM",
       "slug": "berri",
       "lines": [
@@ -274,6 +367,192 @@
               "exit_cars": [
                 {"car": 3, "note": "Exit + Angrignon + Orange Line"},
                 {"car": 7, "note": "Exit + Honoré Beaugrand + Orange Line"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Papineau",
+      "slug": "papineau",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 6}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Frontenac",
+      "slug": "frontenac",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 7}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 3}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Préfontaine",
+      "slug": "prefontaine",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 7}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 3}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Joliette",
+      "slug": "joliette",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 3}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 8}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Pie-IX",
+      "slug": "pie_ix",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 7},
+                {"car": 8}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 4},
+                {"car": 5},
+                {"car": 7},
+                {"car": 8}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Viau",
+      "slug": "viau",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1},
+                {"car": 2},
+                {"car": 3}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 8},
+                {"car": 9}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Assomption",
+      "slug": "assomption",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 8},
+                {"car": 9}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 4},
+                {"car": 5}
               ]
             }
           ]
