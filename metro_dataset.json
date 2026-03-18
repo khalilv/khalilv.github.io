@@ -204,6 +204,31 @@
               ]
             }
           ]
+        },
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 9, "note": "Transfer Only"},
+                {"car": 6, "note": "Transfer Only"},
+                {"car": 4, "note": "Exit + Transfer"},
+                {"car": 1, "note": "Exit + Transfer"}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2, "note": "Transfer Only"},
+                {"car": 3, "note": "Transfer Only"},
+                {"car": 7, "note": "Exit + Transfer"},
+                {"car": 8, "note": "Exit + Transfer"}
+              ]
+            }
+          ]
         }
       ]
     },
@@ -322,6 +347,64 @@
       ]
     },
     {
+      "station": "Place-des-Arts",
+      "slug": "place_des_arts",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 9, "note": "De Bleury"},
+                {"car": 5, "note": "Jeanne-Mance/President Kennedy"},
+                {"car": 4, "note": "Jeanne-Mance/President Kennedy"},
+                {"car": 3, "note": "Place des arts"}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "De Bleury"},
+                {"car": 5, "note": "Jeanne-Mance/President Kennedy"},
+                {"car": 6, "note": "Jeanne-Mance/President Kennedy"},
+                {"car": 7, "note": "Place des arts"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Saint-Laurent",
+      "slug": "saint_laurent",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 8},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "station": "Berri-UQAM",
       "slug": "berri",
       "lines": [
@@ -367,6 +450,56 @@
               "exit_cars": [
                 {"car": 3, "note": "Exit + Angrignon + Orange Line"},
                 {"car": 7, "note": "Exit + Honoré Beaugrand + Orange Line"}
+              ]
+            }
+          ]
+        },
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 8, "note": "Yellow Line"},
+                {"car": 7, "note": "Exit + Honoré-Beaugrand"},
+                {"car": 5, "note": "Angrignon"}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2, "note": "Yellow Line"},
+                {"car": 3, "note": "Exit + Honoré-Beaugrand"},
+                {"car": 5, "note": "Angrignon"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Beaudry",
+      "slug": "beaudry",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 8}
               ]
             }
           ]
@@ -560,6 +693,811 @@
       ]
     },
     {
+      "station": "Cadillac",
+      "slug": "cadillac",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 3},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 7},
+                {"car": 8}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Langelier",
+      "slug": "langelier",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 5},
+                {"car": 6},
+                {"car": 7}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Radisson",
+      "slug": "radisson",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 3},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 7},
+                {"car": 8}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Honoré-Beaugrand",
+      "slug": "honore_beaugrand",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 7}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Côte-Vertu",
+      "slug": "cote_vertu",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 6}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 4}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Du Collège",
+      "slug": "du_college",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 9, "note": "Du Collège"},
+                {"car": 1, "note": "Cartier"}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Du Collège"},
+                {"car": 9, "note": "Cartier"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "De la Savane",
+      "slug": "de_la_savane",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 9}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 1}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Namur",
+      "slug": "namur",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 9}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 1}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Plamondon",
+      "slug": "plamondon",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 9, "note": "Plamondon + Barclay"},
+                {"car": 1, "note": "Van Horne"}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Plamondon + Barclay"},
+                {"car": 9, "note": "Van Horne"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Côte-Sainte-Catherine",
+      "slug": "cote_sainte_catherine",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 5},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 4}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Villa-Maria",
+      "slug": "villa_maria",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 1}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 9}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Vendôme",
+      "slug": "vendome",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 5},
+                {"car": 6}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Place-Saint-Henri",
+      "slug": "place_saint_henri",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 6}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 4}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Georges-Vanier",
+      "slug": "georges_vanier",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Lucien-L'Allier",
+      "slug": "lucien_l_allier",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 1}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 9}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Bonaventure",
+      "slug": "bonaventure",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 3}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 7}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Square-Victoria",
+      "slug": "square_victoria",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 9},
+                {"car": 7},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1},
+                {"car": 3},
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Place-d'Armes",
+      "slug": "place_d_armes",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 6},
+                {"car": 5}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Champ-de-Mars",
+      "slug": "champ_de_mars",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 6}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Sherbrooke",
+      "slug": "sherbrooke",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 6}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 4}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Mont-Royal",
+      "slug": "mt_royal",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1},
+                {"car": 2},
+                {"car": 3}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 8},
+                {"car": 9}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Laurier",
+      "slug": "laurier",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 9, "note": "Saint-Joseph"},
+                {"car": 1, "note": "Laurier"}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Saint-Joseph"},
+                {"car": 9, "note": "Laurier"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Rosemont",
+      "slug": "rosemont",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 8},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Beaubien",
+      "slug": "beaubien",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 6},
+                {"car": 5}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Jarry",
+      "slug": "jarry",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1},
+                {"car": 2}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 8},
+                {"car": 9}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Crémazie",
+      "slug": "cremazie",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 5},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Sauvé",
+      "slug": "sauve",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4},
+                {"car": 6}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Henri-Bourassa",
+      "slug": "henri_bourassa",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 3}]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 7},
+                {"car": 8}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Cartier",
+      "slug": "cartier",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4, "note": "Exit under construction"},
+                {"car": 2}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 8}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "De la Concorde",
+      "slug": "de_la_concorde",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 6},
+                {"car": 4}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 3},
+                {"car": 4},
+                {"car": 5}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Montmorency",
+      "slug": "montmorency",
+      "lines": [
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 8},
+                {"car": 6}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2},
+                {"car": 4}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "station": "Jean-Drapeau",
       "slug": "jean_drapeau",
       "lines": [
@@ -640,6 +1578,31 @@
                 {"car": 1},
                 {"car": 3},
                 {"car": 5}
+              ]
+            }
+          ]
+        },
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 8, "note": "Exit + Transfer"},
+                {"car": 6, "note": "Exit + Transfer"},
+                {"car": 4, "note": "Exit + Transfer"},
+                {"car": 2, "note": "Exit + Transfer"}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2, "note": "Exit + Transfer"},
+                {"car": 4, "note": "Exit + Transfer"},
+                {"car": 6, "note": "Exit + Transfer"},
+                {"car": 8, "note": "Exit + Transfer"}
               ]
             }
           ]
@@ -844,6 +1807,30 @@
               "exit_cars": [
                 {"car": 1, "note": "Côte-Vertu"},
                 {"car": 5, "note": "Montmorency"}
+              ]
+            }
+          ]
+        },
+        {
+          "line": "orange",
+          "directions": [
+            {
+              "terminal": "Montmorency",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 9, "note": "Exit"},
+                {"car": 8, "note": "Exit"},
+                {"car": 4, "note": "Blue line"}
+              ]
+            },
+            {
+              "terminal": "Côte-Vertu",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Exit"},
+                {"car": 2, "note": "Exit"},
+                {"car": 6, "note": "Blue line"},
+                {"car": 7, "note": "Blue line"}
               ]
             }
           ]
