@@ -24,6 +24,211 @@
   },
   "stations": [
     {
+      "station": "Angrignon",
+      "slug": "angrignon",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 4}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 6}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Verdun",
+      "slug": "verdun",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 1}, {"car": 2}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 7}, {"car": 8}, {"car": 9}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Jolicoeur",
+      "slug": "jolicoeur",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 5}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 5}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Monk",
+      "slug": "monk",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 5}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 5}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "De l'Église",
+      "slug": "de_leglise",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 4, "note": "De l'Église"},
+                {"car": 9, "note": "Wellington"}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Wellington"},
+                {"car": 6, "note": "De l'Église"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "LaSalle",
+      "slug": "lasalle",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 6}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 2}, {"car": 3}, {"car": 4}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Charlevoix",
+      "slug": "charlevoix",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 3}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 7}]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Lionel-Groulx",
+      "slug": "lionel_groulx",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 1, "note": "Transfer Only"},
+                {"car": 4, "note": "Transfer Only"},
+                {"car": 6, "note": "Exit + Transfer"},
+                {"car": 9, "note": "Exit + Transfer"}
+              ]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [
+                {"car": 2, "note": "Exit + Transfer"},
+                {"car": 3, "note": "Exit + Transfer"},
+                {"car": 7, "note": "Transfer Only"},
+                {"car": 8, "note": "Transfer Only"}
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "station": "Atwater",
+      "slug": "atwater",
+      "lines": [
+        {
+          "line": "green",
+          "directions": [
+            {
+              "terminal": "Honoré-Beaugrand",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 2}, {"car": 6}]
+            },
+            {
+              "terminal": "Angrignon",
+              "elevator_cars": [],
+              "exit_cars": [{"car": 4}, {"car": 8}]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "station": "Berri-UQAM",
       "slug": "berri",
       "lines": [
